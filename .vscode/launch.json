@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "convert_are_to_json.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\convert_are_to_json.py",
+            // "args": ["-i", "D:\\Gitlab\\rom24mud\\rom24-quickmud\\area",
+            //         "-o", "D:\\Gitlab\\rom24mud\\rom24-quickmud\\area_json"
+            // ],
+            "args": ["-i", "D:\\Gitlab\\mudmapper\\area_test",
+                    "-o", "D:\\Gitlab\\mudmapper\\area_test"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "convert_json_to_mudlet_xml.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}\\convert_json_to_mudlet_xml.py",
+            "args": ["-i", "D:\\Gitlab\\mudmapper\\area_test",
+                    "-o", "C:\\Users\\colin\\.config\\mudlet\\profiles\\local\\mudlet_custom.xml"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
