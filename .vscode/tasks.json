@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generate map.xml from area folder",
+            "type": "shell",
+            "command": "python convert_are_to_json.py -i ./area -o ./area; python convert_json_to_mudlet_xml.py -i ./area -o map.xml",
+            "problemMatcher": []
+        }
+    ]
+}
