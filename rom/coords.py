@@ -1,12 +1,12 @@
 import copy
+from dataclasses import dataclass
 
 
+@dataclass
 class Coords:
-    '''Coordinates x,y,z to map rooms'''
-    def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
+    x: int
+    y: int
+    z: int
 
     @staticmethod
     def from_direction(coords, direction):
@@ -28,6 +28,3 @@ class Coords:
             coords.z -= 1
 
         return coords
-
-    def __str__(self):
-        return f"Coords(x={self.x}, y={self.y}, z={self.z})"

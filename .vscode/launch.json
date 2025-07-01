@@ -6,31 +6,28 @@
     "configurations": [
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
         },
         {
             "name": "convert_are_to_json.py",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\convert_are_to_json.py",
-            // "args": ["-i", "D:\\Gitlab\\rom24mud\\rom24-quickmud\\area",
-            //         "-o", "D:\\Gitlab\\rom24mud\\rom24-quickmud\\area_json"
-            // ],
-            "args": ["-i", "D:\\Gitlab\\mudmapper\\area_test",
-                    "-o", "D:\\Gitlab\\mudmapper\\area_test"
+            "program": "${workspaceFolder}/convert_are_to_json.py",
+            "args": ["-i", "D:/github/mudmapper/area",
+                    "-o", "D:/github/mudmapper/area"
             ],
             "console": "integratedTerminal"
         },
         {
             "name": "convert_json_to_mudlet_xml.py",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\convert_json_to_mudlet_xml.py",
-            "args": ["-i", "D:\\Gitlab\\mudmapper\\area_test",
-                    "-o", "C:\\Users\\colin\\.config\\mudlet\\profiles\\local\\mudlet_custom.xml"
+            "program": "${workspaceFolder}/convert_json_to_mudlet_xml.py",
+            "args": ["-i", "D:/github/mudmapper/area",
+                    "-o", "map.xml"
             ],
             "console": "integratedTerminal"
         }

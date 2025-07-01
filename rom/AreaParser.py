@@ -1,4 +1,6 @@
 import json
+from dataclasses import dataclass, field
+from typing import List, Optional
 
 from rom.coords import Coords
 
@@ -7,77 +9,68 @@ from .FileIO import (fread_letter, fread_number, fread_string, fread_until,
 from .merc import get_direction_name, get_flag_names, get_sector_type, dir_to_direction
 
 
+@dataclass
 class Exit():
-    def __init__(self):
-        self.direction = None
-        self.to = None
-        self.keyword = None
-        self.description = None
-        self.locks = None
-        self.key = None
-        self.exit_info = None
-
-    def __str__(self):
-        return f"Exit(direction={self.direction}, to={self.to}, keyword='{self.keyword}', locks={self.locks}, key={self.key}, exit_info={self.exit_info})"
+    direction: str = None
+    to: int = None
+    keyword: Optional[str ] = None
+    description: Optional[str] = None
+    locks: Optional[str] = None
+    key: Optional[str] = None
+    exit_info: Optional[str] = None
 
 
+@dataclass
 class Room():
-    def __init__(self):
-        self.vnum = None
-        self.name = None
-        self.description = None
-        self.flags = []
-        self.sector_type = None
-        self.extra_descr_data = {}
-        self.exits = []
-        self.coords = None
-
-    def __repr__(self):
-        return self.__dict__
-
-    def __str__(self):
-        printable = f"Room(vnum={self.vnum}, name='{self.name}', flags={self.flags}, sector_type='{self.sector_type}')\n"
-
-        for exit in self.exits:
-            printable += "  " + str(exit) + '\n'
-
-        return printable
+    vnum: Optional[int] = None
+    name: Optional[str] = None
+    description: Optional[str] = None
+    flags: Optional[List[str]] = field(default_factory=list)
+    sector_type: Optional[str] = None
+    extra_descr_data: Optional[dict] = field(default_factory=dict)
+    exits: Optional[List[Exit]] = field(default_factory=list)
+    coords: Optional[Coords] = None
 
 
-# Used for BFS
-visited = []
-queue = []
+def assign_coordinates(rooms):
+    # Direction offsets for coordinate changes, including Z-axis
+    DIRECTION_OFFSETS = {
+        "DIR_NORTH": (0, 1, 0),
+        "DIR_EAST": (1, 0, 0),
+        "DIR_SOUTH": (0, -1, 0),
+        "DIR_WEST": (-1, 0, 0),
+        "DIR_UP": (0, 0, 1),
+        "DIR_DOWN": (0, 0, -1),
+    }
 
+    coordinates = {}  # Room vnum -> (x, y, z)
+    visited = set()   # Track visited rooms
+    occupied = set()  # Track occupied coordinates
 
-def bfs(visited, graph, map_coords, node):
-    '''Literally haven't ever had to use this skill unless it was a technical interview...'''
-    visited.append(node)
-    queue.append(node)
+    def dfs(room, x, y, z):
+        if room.vnum in visited:
+            return
+        visited.add(room.vnum)
+        coordinates[room.vnum] = (x, y, z)
+        occupied.add((x, y, z))
 
-    map_coords[node] = Coords(0, 0, 0)
+        for exit in room.exits:
+            neighbor_vnum = exit.to
+            if neighbor_vnum not in visited:
+                dx, dy, dz = DIRECTION_OFFSETS[exit.direction]
+                new_x, new_y, new_z = x + dx, y + dy, z + dz
+                while (new_x, new_y, new_z) in occupied:  # Adjust to avoid overlap
+                    new_x += 1  # Shift to the right if overlap occurs
 
-    while queue:
-        vnum = queue.pop(0)
+                tmp = list(r for r in rooms if r.vnum == neighbor_vnum) 
+                if len(tmp) > 0:
+                    dfs(next(r for r in rooms if r.vnum == neighbor_vnum), new_x, new_y, new_z)
 
-        if vnum not in graph:
-            print(f"[WARNING] Found vnum {vnum} which isn't in our graph, it's probably a connecting door to another area.")
-            continue
+    # Start with the first room
+    if rooms:
+        dfs(rooms[0], 0, 0, 0)
 
-        current_room_location = map_coords[vnum]
-
-        for k, v in graph[vnum].items():
-            neighbour = k
-            direction = dir_to_direction(v)
-
-            if neighbour not in visited:
-                visited.append(neighbour)
-                queue.append(neighbour)
-
-                position = Coords.from_direction(current_room_location, direction)
-                # print(f"{neighbour:>7} is {direction:>8} from {vnum:>7} at {position}")
-                map_coords[neighbour] = position
-
-    return map_coords
+    return coordinates
 
 
 class Area():
@@ -141,16 +134,8 @@ class Area():
         '''Assigns each room a coord x,y,z'''
         print("Assigning rooms coordinates...")
 
-        # gridmap = GridMap()
-
-        # Create a graph structure
-        graph = {room.vnum: {e.to: e.direction for e in room.exits} for room in area.rooms}
-
         # Breadth-first search through the map to visit all rooms and return their coordinates
-        map_coords = bfs(visited, graph, {}, area.rooms[0].vnum)
-
-        # Mapping of the coordinates to the rooms which are at them
-        coords_to_rooms = {}
+        map_coords = assign_coordinates(area.rooms)
 
         for room in area.rooms:
             # Assign each room its coordinates
@@ -161,18 +146,10 @@ class Area():
                 continue
 
             coords = map_coords[room.vnum]
-            room.coords = coords
-
-            # Check for stacked rooms
-            if str(coords) not in coords_to_rooms:
-                coords_to_rooms[str(coords)] = []
-            coords_to_rooms[str(coords)].append(room.vnum)
-
-        for coords, rooms in coords_to_rooms.items():
-            if len(rooms) > 1:
-                print(f"[WARNING] Rooms {rooms} are stacked on each other.")
+            room.coords = Coords(*coords)  # Assign x, y, z as Coords object
 
         print("Coordinates assigned")
+
 
     @staticmethod
     def load_rooms(fs):

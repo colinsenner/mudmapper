@@ -1,0 +1,5712 @@
+{
+  "filename": "midgaard.are",
+  "name": "Midgaard",
+  "credits": "{ All } Diku    Midgaard",
+  "min_vnum": 3000,
+  "max_vnum": 3399,
+  "rooms": [
+    {
+      "vnum": 3001,
+      "name": "The Temple Of Mota",
+      "description": "You are in the southern end of the temple hall in the Temple of Mota.\n\rThe temple has been constructed from giant marble blocks, eternal in\n\rappearance, and most of the walls are covered by ancient wall paintings\n\rpicturing gods, giants and peasants.\n\r   Large steps lead down through the grand temple gate, descending the huge\n\rmound upon which the temple is built and ends on the temple square below.\n\r   Equally large steps lead UP through a small door into the ENTRANCE to MUD \n\rSCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "plaque",
+        "description": "This entire world has been integrated, modified, debugged, and enhanced by\n\rHatchet, Kahn, and Furey of MERC Industries to be run by any MERC Mud.\n\r1992 December 17\n\rROM enhancements by Alander.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3054,
+          "keyword": "",
+          "description": "At the northern end of the temple hall is a statue and a huge altar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3005,
+          "keyword": "",
+          "description": "You see the temple square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 3700,
+          "keyword": "",
+          "description": "You see the entrance to Mud School.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3002,
+      "name": "Cleric's Inner Sanctum",
+      "description": "This is the inner sanctum.  A picture of the mighty Mota is hanging on\n\rthe wall, just above the altar which is set against the western wall.  A well\n\rin the middle of the floor leads down into darkness.  Vile smells waft from\n\rthe depths.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3003,
+          "keyword": "",
+          "description": "You see your favorite place, the bar of divination.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 7026,
+          "keyword": "",
+          "description": "You can't see what is down there, it is too dark.  Looks like it would be\n\rimpossible to climb back up.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": -2,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3003,
+      "name": "Cleric's Bar",
+      "description": "The bar is one of the finest in the land, lucky it is members only.  Fine\n\rfurniture is set all around the room.  A small sign is hanging on the wall.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign reads:\n\rFree instructions provided by the waiter:\n\r\n\r   Buy  - Buy something (drinkable) from the waiter.\n\r   List - The waiter will show you all the different drinks and\n\r          specialties, and tell the price of each.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3004,
+          "keyword": "",
+          "description": "You see the entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3002,
+          "keyword": "",
+          "description": "You see the inner sanctum.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3004,
+      "name": "Entrance to Cleric's Guild",
+      "description": "The entrance hall is a small modest room, reflecting the true nature of\n\rthe Clerics.  The exit leads east to the temple square.  A small entrance to\n\rthe bar is in the northern wall.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3003,
+          "keyword": "",
+          "description": "You see the bar, richly decorated with really stylish furniture.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3005,
+          "keyword": "",
+          "description": "You see the Temple Square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": -1,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3005,
+      "name": "The Temple Square",
+      "description": "You are standing on the temple square.  Huge marble steps lead up to the\n\rtemple gate.  The entrance to the Clerics Guild is to the west, and the old\n\rGrunting Boar Inn, is to the east.  Just south of here you see the market\n\rsquare, the center of Midgaard.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3001,
+          "keyword": "",
+          "description": "You see the temple.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3006,
+          "keyword": "",
+          "description": "You see the good old Grunting Boar Inn.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3014,
+          "keyword": "",
+          "description": "You see the Market Square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3004,
+          "keyword": "",
+          "description": "You see the entrance to the Clerics Guild.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 3057,
+          "keyword": "",
+          "description": "You see the air.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3006,
+      "name": "Entrance to the Grunting Boar Inn",
+      "description": "You are standing in the entrance hall of the Grunting Boar Inn.  The hall\n\rhas been wisely decorated with simple but functional furniture.  A small\n\rstaircase leads up to the defunct reception room and the bar is to the east.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3007,
+          "keyword": "",
+          "description": "Surprise! You see the bar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3005,
+          "keyword": "",
+          "description": "You see the temple square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 3008,
+          "keyword": "",
+          "description": "You see the defunct reception room.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3007,
+      "name": "The Grunting Boar",
+      "description": "You are standing in the bar.  The bar is set against the northern wall, old\n\rarchaic writing, carvings and symbols cover its top.  A fireplace is built into\n\rthe western wall, and through the southeastern windows you can see the temple\n\rsquare.  This place makes you feel like home.\n\rA small sign with big letters is fastened to the bar.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign reads:\n\rFree instructions provided by the Grunting Boar Inn.\n\r\n\r   Buy  - Buy something (drinkable) from the bartender.\n\r   List - The bartender will show you all the different drinks and\n\r          specialties, and tell the price of each.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_WEST",
+          "to": 3006,
+          "keyword": "",
+          "description": "You see the exit to the entrance hall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 2,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3008,
+      "name": "The Defunct Reception",
+      "description": "You are standing in a dusty, defunct reception.  The staircase leads\n\rdown to the entrance hall.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_DOWN",
+          "to": 3006,
+          "keyword": "",
+          "description": "You see the entrance hall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": -1,
+        "z": 1
+      }
+    },
+    {
+      "vnum": 3009,
+      "name": "The Bakery",
+      "description": "You are standing inside the small bakery.  A sweet scent of Danish and\n\rfine bread fills the room.  The bread and Danish are arranged in fine order\n\ron the shelves, and seem to be of the finest quality.\n\rA small sign is on the counter.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "danish pastry",
+        "description": "You see that this is truly delicious pastry.  Must be made by a Dane from\n\rDenmark (which surely is not the capital of Sweden!).  Former ruler of\n\rScandinavia, England, Northern Germany, Northern France, Russia, Greenland,\n\rIceland, Estonia etc. etc.\n\r   The sight of those large, wholesome chokoladeboller makes your mouth water\n\rand your soul sing.\n\r\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3013,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 11,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3010,
+      "name": "The General Store",
+      "description": "You are inside the general store.  All sorts of items are stacked on shelves\n\rbehind the counter, safely out of your reach.\n\rA small note hangs on the wall.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "note",
+        "description": "The note reads:\n\r\n\r  List  - Show which various items are in the store.\n\r  Buy   - Buy an item.\n\r  Value - The shopkeeper will (free of charge) tell how much he will\n\r          pay for your item.\n\r  Sell  - Sell an item.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3015,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3011,
+      "name": "The Weapon Shop",
+      "description": "You are inside the weapon shop.  There is a small note on the counter.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "note",
+        "description": "The note reads:\n\r\n\r  List  - Show which various items are in the store.\n\r  Buy   - Buy an item.\n\r  Value - The shopkeeper will (free of charge) tell how much he will\n\r          pay for your item.\n\r  Sell  - Sell an item.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3016,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 4,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3012,
+      "name": "Main Street",
+      "description": "You are at the end of the main street of Midgaard.  South of here is the\n\rentrance to the Guild of Magic Users.  The street continues east towards the\n\rmarket square.  The magic shop is to the north and to the west is the city\n\rgate.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3033,
+          "keyword": "",
+          "description": "You see the magic shop.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3013,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3017,
+          "keyword": "",
+          "description": "You see the entrance to the Guild of Magic Users.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3040,
+          "keyword": "",
+          "description": "You see the city gate.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 10,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3013,
+      "name": "Main Street",
+      "description": "You are on the main street passing through the City of Midgaard.  South of\n\rhere is the entrance to the Armoury, and the bakery is to the north.  East of\n\rhere is the market square.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3009,
+          "keyword": "",
+          "description": "You see the bakery.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3014,
+          "keyword": "",
+          "description": "You see the market square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3020,
+          "keyword": "",
+          "description": "You see the armoury.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3012,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 11,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3014,
+      "name": "Market Square",
+      "description": "You are standing on the market square, the famous Square of Midgaard.\n\rA large, peculiar looking statue is standing in the middle of the square.\n\rRoads lead in every direction, north to the temple square, south to the\n\rcommon square, east and westbound is the main street.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "statue",
+        "description": "What you see is the Midgaard Worm, stretching around the Palace of Midgaard.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3005,
+          "keyword": "",
+          "description": "You see the temple square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3015,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3025,
+          "keyword": "",
+          "description": "You see the common square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3013,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3015,
+      "name": "The Main Street",
+      "description": "You are on Main Street crossing through town.  To the north is the general\n\rstore, and the main street continues east.  To the west you see and hear the\n\rmarket place and to the south is the Jeweller's Shop.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3010,
+          "keyword": "",
+          "description": "You see the general store.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3016,
+          "keyword": "",
+          "description": "You see Main Street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3034,
+          "keyword": "",
+          "description": "You see the Jeweller's Shop.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3014,
+          "keyword": "",
+          "description": "You see the market square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3016,
+      "name": "The Main Street",
+      "description": "The main street, to the north is the weapon shop and to the south is the\n\rGuild of Swordsmen.  To the east you leave town and to the west the street\n\rleads to the market square.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3011,
+          "keyword": "",
+          "description": "You see the weapon shop.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3041,
+          "keyword": "",
+          "description": "You see the city gate.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3021,
+          "keyword": "",
+          "description": "You see the swordsmen's guild.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3015,
+          "keyword": "",
+          "description": "You see the main street leading to the market square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 2,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3017,
+      "name": "Entrance to Mage's Guild",
+      "description": "The entrance hall is a small, poor lighted room.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3012,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3018,
+          "keyword": "",
+          "description": "You see your favorite place, the Mage's Bar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 10,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3018,
+      "name": "Mage's Bar",
+      "description": "The bar is one of the wierdest in the land.  Mystical images float around\n\rthe air.  Illusions of fine furniture appear all around the room.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3017,
+          "keyword": "",
+          "description": "You see the lobby.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3019,
+          "keyword": "",
+          "description": "You see the laboratory.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 10,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3019,
+      "name": "Mage's Laboratory",
+      "description": "This is the Magical Experiments Laboratory.  Dark smoke-stained stones\n\rarch over numerous huge oaken tables, most of these cluttered with strange-\n\rlooking pipes and flasks.  The floor is covered with half-erased pentagrams\n\rand even weirder symbols, and a blackboard in a dark corner has only been\n\rpartially cleaned, some painful-looking letters faintly visible.  A well in\n\rthe middle of the floor leads down into darkness.  Vile smells waft from the\n\rdepths.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_WEST",
+          "to": 3018,
+          "keyword": "",
+          "description": "You see the bar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 7017,
+          "keyword": "",
+          "description": "You can't see what is down there, it is too dark.  Looks like it would be\n\rimpossible to climb back up.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 11,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3020,
+      "name": "The Armoury",
+      "description": "The armoury with all kinds of armours on the walls and in the window.  You\n\rsee helmets, shields and chain mails.  To the north is the main street.\n\rOn the wall is a small note.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "note",
+        "description": "You can use these commands for trading:\n\r\n\r  value <item>     To get the price of an item in your possession.\n\r  sell <item>      To sell something.\n\r  buy <item>       To buy something (provided that the shop has it in store).\n\r  list             Gives you a listing of the shop's inventory.\n\r\n\r        WE DON'T GIVE CREDIT; WE DON'T EXPECT TO RECEIVE CREDIT!\n\r                             NO HAGGLING\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3013,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 11,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3021,
+      "name": "Entrance Hall to the Guild of Swordsmen",
+      "description": "The entrance hall to the Guild of Swordsmen.  A place where one has to be\n\rcareful not to say something wrong (or right).  To the east is the bar and to\n\rthe north is the main street.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3016,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3022,
+          "keyword": "",
+          "description": "You see the swordsmen's bar, many noises comes from there.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 2,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3022,
+      "name": "The Bar of Swordsmen",
+      "description": "The bar of swordsmen, once upon a time beautifully furnished.  But now the\n\rfurniture is all around you in small pieces.  To the south is the yard, and\n\rto the west is the entrance hall.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3023,
+          "keyword": "",
+          "description": "You see the practice yard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3021,
+          "keyword": "",
+          "description": "You see the entrance hall to the thieves guild.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3023,
+      "name": "The Tournament and Practice Yard",
+      "description": "The practice yard of the fighters.  To the north is the bar.  A well leads\n\rdown into darkness.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3022,
+          "keyword": "",
+          "description": "You see the bar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 7048,
+          "keyword": "",
+          "description": "You can't see what is down there, it is too dark.  Looks like it would be\n\rimpossible to climb back up.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3024,
+      "name": "Eastern End of Poor Alley",
+      "description": "You are at the poor alley. South of here is the Grubby Inn and to the\n\reast you see common square. Melancholy's map shop is north. The alley continues \n\rfurther west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3160,
+          "keyword": "",
+          "description": "You see Melancholy's Map Shop\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3025,
+          "keyword": "",
+          "description": "You see the common square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3048,
+          "keyword": "",
+          "description": "You see the Inn.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3044,
+          "keyword": "",
+          "description": "You see the poor alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 13,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3025,
+      "name": "The Common Square",
+      "description": "The common square, people pass you, talking to each other.  To the west is\n\rthe poor alley and to the east is the dark alley.  To the north, this square\n\ris connected to the market square.  From the south you notice a nasty smell.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3014,
+          "keyword": "",
+          "description": "You see the market square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3026,
+          "keyword": "",
+          "description": "You see the dark alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3030,
+          "keyword": "",
+          "description": "You see the city dump.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3024,
+          "keyword": "",
+          "description": "You see the poor alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 14,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3026,
+      "name": "The Dark Alley",
+      "description": "The dark alley, to the west is the common square and to the south is the\n\rGuild of Thieves.  Grebe's Tavern, the famous sailor's dive, is north.\n\rThe alley continues east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "guild",
+        "description": "It is the thieves guild, don't enter if you care about your health or money.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3352,
+          "keyword": "",
+          "description": "You see a foul-smelling sailor's dive.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3045,
+          "keyword": "",
+          "description": "The alley continues east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3027,
+          "keyword": "",
+          "description": "You see the entrance to the thieves guild.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3025,
+          "keyword": "",
+          "description": "You see the common square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 15,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3027,
+      "name": "Entrance Hall to the Guild of Thieves",
+      "description": "The entrance hall to the thieves' and assassins' guild.  A place where you\n\rcan lose both your life and your money, if you are not careful.  To the north\n\ris the dark alley and to the east is the thieves' bar.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3026,
+          "keyword": "",
+          "description": "You see the alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3028,
+          "keyword": "",
+          "description": "You see the thieves bar, where everything disappears.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 15,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3028,
+      "name": "The Thieves Bar",
+      "description": "The bar of the thieves.  Once upon a time this place was beautifully\n\rfurnished, but now it seems almost empty.  To the south is the yard, and to\n\rthe west is the entrance hall.\n\r   (Maybe the furniture has been stolen?!)\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "furniture",
+        "description": "As you look at the furniture, the chair you sit on disappears.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3029,
+          "keyword": "",
+          "description": "You see the secret yard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3027,
+          "keyword": "",
+          "description": "You see the entrance hall to the thieves guild.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3029,
+      "name": "The Secret Yard",
+      "description": "The secret practice yard of thieves and assassins.  To the north is the\n\rbar.  A well leads down into darkness.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3028,
+          "keyword": "",
+          "description": "You see the bar.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 7043,
+          "keyword": "",
+          "description": "You can't see what is down there, it is too dark.  Looks like it would be\n\rimpossible to climb back up.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 29,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3030,
+      "name": "The Dump",
+      "description": "The dump, where the people from the city drop their garbage.  Through the\n\rgarbage you can see a large junction of pipes, looks like the entrance to the\n\rsewer system.  South of here you see the river and to the north is the common\n\rsquare.  A rickety old bridge leads south to the promenade.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_FIELD",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3025,
+          "keyword": "",
+          "description": "You see the common square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3254,
+          "keyword": "",
+          "description": "You see a river between northern and southern Midgaard.  A small bridge\n\rspans the flow.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 7030,
+          "keyword": "",
+          "description": "You see the sewers.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 22,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3031,
+      "name": "The Pet Shop",
+      "description": "The Pet Shop is a small crowded store, full of cages and animals of\n\rvarious sorts and sizes.  There is a sign on the wall.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_PET_SHOP",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign reads:\n\r\n\r  Use 'List' to see the available pets.\n\r  Use 'Buy <pet> <name>' to buy yourself a pet and name it.\n\r\n\r  You can use 'order <pet> <instructions>' to order your pets around.\n\r  If you abuse your pet, it will no longer regard you as its master.\n\r  If you have several pets you may use 'order all <instructions>'\n\r\n\r Regards,\n\r\n\r   The Shopkeeper\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3045,
+          "keyword": "",
+          "description": "You see the Alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3032,
+      "name": "Pet Shop Store",
+      "description": "This is the small dark room in which the Pet Shop Boy keeps his pets.\n\rIt is vital that this room be immediately after the pet shop.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [],
+      "coords": null
+    },
+    {
+      "vnum": 3033,
+      "name": "The Magic Shop",
+      "description": "You are in a small room that smells of rare chemicals and spices.\n\rDividing the room in two is a large desk, and on the wall behind it are\n\rnumerous shelves crammed with jars, bottles, books and scrolls of all\n\rsorts and sizes.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "jars bottles",
+        "description": "Some of them are transparent enabling you to see that some contain colored\n\rpowders while others contain body parts of various animals.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3012,
+          "keyword": "",
+          "description": "You see the main street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 10,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3034,
+      "name": "The Jeweller's Shop",
+      "description": "You are in a small, beautifully furnished room.  The warm light emanating\n\rfrom the small oil lamps on the walls is reflected in the hard, polished\n\rsurface of the big mahogany desk that stands in the centre of the room.\n\rA small sign with golden letters stands on the desk.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "oil lamps",
+        "description": "They are made from polished gold and looks as if they are securely fastened\n\rto the smooth stone walls.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3015,
+          "keyword": "",
+          "description": "You see Main Street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3035,
+      "name": "The Leather Shop",
+      "description": "An acrid smell fills this large room.  Along the walls are numerous\n\rshelves containing all sorts of animal hide and in the crackling fireplace\n\rhangs a big iron pot with boiling water.  In the middle of the room is a\n\rlarge oak table.\n\rA wooden sign is hanging above the fireplace.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "fireplace",
+        "description": "It is a rather large fireplace made from heavy granite rocks.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3044,
+          "keyword": "",
+          "description": "You see the alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 12,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3040,
+      "name": "Inside the West Gate of Midgaard",
+      "description": "You are by two small towers that have been built into the city wall and\n\rconnected with a footbridge across the heavy wooden gate.  Main Street leads\n\reast and Wall Road leads both north and south from here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "bridge footbridge",
+        "description": "It is too high up to reach but it looks as if one easily could walk across it\n\rfrom one tower to the other.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3257,
+          "keyword": "",
+          "description": "Wall road runs along the inner city wall to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3012,
+          "keyword": "",
+          "description": "You see Main Street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3042,
+          "keyword": "",
+          "description": "You see the road running along the inner side of the city wall.  You notice\n\rthat it is called Wall Road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3052,
+          "keyword": "gate",
+          "description": "The city gate is to the west.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 9,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3041,
+      "name": "Inside the East Gate of Midgaard",
+      "description": "You are by two small towers that have been built into the city wall and\n\rconnected with a footbridge across the heavy wooden gate.  Main Street leads\n\rwest from here.  Wall road crosses the street, heading north and south along\n\rthe city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "bridge footbridge",
+        "description": "It is too high up to reach but it looks as if one easily could walk across it\n\rfrom one tower to the other.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3267,
+          "keyword": "",
+          "description": "Wall road heads north along the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3053,
+          "keyword": "gate",
+          "description": "You see the city gate.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3250,
+          "keyword": "",
+          "description": "Wall road heads south towards the poor section of town.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3016,
+          "keyword": "",
+          "description": "You see Main Street.",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3042,
+      "name": "Wall Road",
+      "description": "You are walking next to the western city wall.  The road continues further\n\rsouth and the city gate is just north of here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "wall",
+        "description": "It is built from large grey rocks that have been fastened to each other with\n\rsome kind of mortar.  It is far too high to climb.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3040,
+          "keyword": "",
+          "description": "You see the city gate.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3043,
+          "keyword": "",
+          "description": "The road continues further south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 9,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3043,
+      "name": "Wall Road",
+      "description": "You are walking next to the western city wall.  Wall Road continues further\n\rnorth and south.  A small, poor alley leads east.\n\rSome letters have been written on the wall here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "letters",
+        "description": "It says 'Who watches the watchmen?'\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3042,
+          "keyword": "",
+          "description": "The road continues further north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3044,
+          "keyword": "",
+          "description": "The alley leads east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3047,
+          "keyword": "",
+          "description": "The road continues further south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 9,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3044,
+      "name": "Poor Alley",
+      "description": "You are in narrow and dirty alley leading east and west.  The leather shop\n\ris to the north.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3035,
+          "keyword": "",
+          "description": "The leather shop is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3024,
+          "keyword": "",
+          "description": "The alley leads east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3170,
+          "keyword": "",
+          "description": "There is an ornate doorway to the south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3043,
+          "keyword": "",
+          "description": "The alley leads west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 12,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3045,
+      "name": "Alley at Levee",
+      "description": "You are standing in the alley which continues east and west.  South of\n\rhere you see the levee.  North is the Pet Shop.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3031,
+          "keyword": "",
+          "description": "You see, hear, and smell the pet shop.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3046,
+          "keyword": "",
+          "description": "The alley leads east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3049,
+          "keyword": "",
+          "description": "You see the levee.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3026,
+          "keyword": "",
+          "description": "The alley leads west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3046,
+      "name": "Eastern end of Alley",
+      "description": "You are standing at the eastern end of the alley,  near the city walls.  \n\rWall road loops around the city to your east, and you can see an old \n\rthree-story warehouse to the south.  The Fountain of Youth Apothecary is \n\rnorth.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3056,
+          "keyword": "",
+          "description": "You see a pricey-looking potion shop.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3251,
+          "keyword": "",
+          "description": "You see wall road, running a north-south loop around the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3050,
+          "keyword": "",
+          "description": "You see the warehouse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3045,
+          "keyword": "",
+          "description": "You see the alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3047,
+      "name": "Wall Road",
+      "description": "You are standing on the road next to the western city wall which\n\rcontinues north.  South of here is a bridge across the river.  To the east,\n\ryou see an odd looking building painted bright orange with purple trim...\n\rit must be the Mob Factory!\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "wall",
+        "description": "It is built from large grey rocks that have been fastened to each other with\n\rsome kind of mortar.  It is far too high to climb.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3043,
+          "keyword": "",
+          "description": "You see the road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 9400,
+          "keyword": "",
+          "description": "You see the purple-and-orange Mob Factory.  Someone has no taste.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3051,
+          "keyword": "",
+          "description": "You see the bridge.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 23,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3048,
+      "name": "Grubby Inn",
+      "description": "You are inside the old Grubby Inn.  This place has not been cleaned for\n\rseveral decades, vile smells make you dizzy.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3024,
+          "keyword": "",
+          "description": "You see the alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 13,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3049,
+      "name": "Levee",
+      "description": "You are at the levee.  South of here you see the river gently flowing west.\n\rThe river bank is very low making it possible to enter the river.  Directly\n\racross the river you can see a small boat landing built off of Kate's Diner.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3045,
+          "keyword": "",
+          "description": "You see the Alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3203,
+          "keyword": "",
+          "description": "You see the river flowing west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3050,
+      "name": "Abandoned Warehouse",
+      "description": "You are inside the only room in the old warehouse.  The place is very dusty\n\rand appears to have been unused for many years.  The skylight spills\n\rviolet-tinged light.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3046,
+          "keyword": "",
+          "description": "You see the alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 8604,
+          "keyword": "",
+          "description": "You see machine dreams and taste violet phosphor.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 28,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3051,
+      "name": "On the Bridge",
+      "description": "You are standing on the stone bridge crosses the river.  The bridge is\n\rbuilt out from the western city wall and the river flows west through an\n\ropening in the wall ten feet below the bridge.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "bridge",
+        "description": "It is built from large grey rocks that have been fastened to each other with\n\rsome kind of mortar, just like the wall.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3047,
+          "keyword": "",
+          "description": "You see the road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3100,
+          "keyword": "",
+          "description": "You see the Concourse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 23,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3052,
+      "name": "Outside the West Gate of Midgaard",
+      "description": "You are by two small towers that have been built into the city wall and\n\rconnected with a footbridge across the heavy wooden gate.  To the west you\n\rcan see the edge of a big forest. A small dusty trail leads north along the\n\rwall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "bridge footbridge",
+        "description": "It is too high up to reach but it looks as if one easily could walk across it\n\rfrom one tower to the other.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3900,
+          "keyword": "",
+          "description": "The trail continues around the City of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3040,
+          "keyword": "gate",
+          "description": "The city gate is to the east.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 6000,
+          "keyword": "",
+          "description": "The forest edge is to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 8,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3053,
+      "name": "Outside the East Gate of Midgaard",
+      "description": "You are by two small towers that have been built into the city wall and\n\rconnected with a footbridge across the heavy wooden gate.  To the east the\n\rplains stretch out in the distance. To the north a small dusty trail follow\n\rthe city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "bridge footbridge",
+        "description": "It is too high up to reach but it looks as if one easily could walk across it\n\rfrom one tower to the other.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3908,
+          "keyword": "",
+          "description": "The trail continues around the City of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3503,
+          "keyword": "",
+          "description": "You see the plains.",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3041,
+          "keyword": "gate",
+          "description": "You see the city gate.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 4,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3054,
+      "name": "By the Temple Altar",
+      "description": "You are by the temple altar in the northern end of the Temple of Mota.\n\rA huge altar made from white polished marble is standing in front of you and\n\rbehind it is a ten foot tall sitting statue of Odin, the King of the Gods.\n\rThe back of the altar opens into a a beautiful atrium, above which can be\n\rseen a rainbow.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_SAFE",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "altar",
+        "description": "Even though the altar is more than ten feet long it appears to be made from a\n\rsingle block of white virgin marble.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3001,
+          "keyword": "",
+          "description": "You see the southern end of the temple.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 1215,
+          "keyword": "",
+          "description": "Bifrost, the Rainbow Bridge, hangs in the sky above you.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "heal_rate": 110,
+      "mana_rate": 110
+    },
+    {
+      "vnum": 3056,
+      "name": "The Fountain of Youth Apothecary",
+      "description": "An old man putters around behind the counter, making strange love potions\n\rand curative philtres.  He turns as you enter, and looks on with avarice.\n\rJudging from the furnishings, he's been made very wealthy by his trade.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3046,
+          "keyword": "",
+          "description": "You see the eastern end of alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3057,
+      "name": "In the air...",
+      "description": "WOW you can fly!  You are floating in the air above Temple Square of Midgaard.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_AIR",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_UP",
+          "to": 1017,
+          "keyword": "",
+          "description": "More of the same.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_DOWN",
+          "to": 3005,
+          "keyword": "",
+          "description": "Back down on the earth where you should be!\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": -1,
+        "z": 1
+      }
+    },
+    {
+      "vnum": 3100,
+      "name": "Northwest end of Concourse",
+      "description": "You are at the concourse, the city wall is just west.  A small promenade\n\rgoes east, and the bridge is just north of here.  The concourse continues\n\rsouth along the city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3051,
+          "keyword": "",
+          "description": "You see the Bridge.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3101,
+          "keyword": "",
+          "description": "You see the promenade.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3270,
+          "keyword": "",
+          "description": "The concourse continues south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 23,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3101,
+      "name": "Promenade",
+      "description": "The river gently flows west just north of here.  The promenade continues\n\rfurther east and to the west you see the city wall.  Park Road leads south\n\rfrom here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3102,
+          "keyword": "",
+          "description": "The promenade.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3131,
+          "keyword": "",
+          "description": "Park Road leads south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3100,
+          "keyword": "",
+          "description": "You see the Concourse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 24,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3102,
+      "name": "Promenade",
+      "description": "The river gently flows west just north of here.  The promenade continues\n\rboth east and west.  A rickety bridge crosses the river to the north, towards\n\rthe city dump (fortunately, the wind is blowing towards the dump today). \n\rSouth of here you see the entrance to the park, and a small building seems\n\rto be just west of the entrance.  Austral Square, home of Kate's Diner, lies\n\rto your east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3254,
+          "keyword": "",
+          "description": "A rickety old bridge crosses the river, heading towards the city dump.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3103,
+          "keyword": "",
+          "description": "You see people moving in and out of Kate's Diner.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3105,
+          "keyword": "",
+          "description": "You see the park entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3101,
+          "keyword": "",
+          "description": "You see the promenade.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3103,
+      "name": "Austral Square",
+      "description": "The Promenade opens here onto Austral Square, on the south bank of the\n\rMidgaard River.  All around you is the bustle of Southern Midgaard--\n\rshopkeepers on break, a town gossip or two prattling away.  You hear the\n\rriver lapping at the pilings of the dock by Kate's Diner, which is to your\n\rnorth.  Emerald Avenue begins to the south, the Promenade continues west,\n\rand the concourse ends to your east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3150,
+          "keyword": "",
+          "description": "You smell the heavenly scents of Kate's Diner.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3104,
+          "keyword": "",
+          "description": "You see the Concourse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3132,
+          "keyword": "",
+          "description": "The small path leads south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3102,
+          "keyword": "",
+          "description": "You see the promenade.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3104,
+      "name": "Northeast end of Concourse",
+      "description": "You are at the Concourse.  The city wall is just east and Austral Square,\n\rhome of Kate's Diner, is west.  Looking across the river you see an old  \n\rwarehouse.  A strong stone bridge crosses the river to the north, where the\n\rconcourse becomes wall road.  The Concourse continues south along the wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "wall",
+        "description": "It is built from large grey rocks that have been fastened to each other with\n\rsome kind of mortar.  It is far too high to climb.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3253,
+          "keyword": "",
+          "description": "A strong stone bridge crosses the river.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3272,
+          "keyword": "",
+          "description": "The Concourse continues south, towards an intersection with Penny Lane.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3103,
+          "keyword": "",
+          "description": "You Austral Square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3105,
+      "name": "Park Entrance",
+      "description": "You are standing just inside the small park of Midgaard.  To the north is\n\rthe promenade and a small path leads south into the park.  To your east is\n\rthe famous Park Cafe.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3102,
+          "keyword": "",
+          "description": "You see the promenade.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3106,
+          "keyword": "",
+          "description": "You see Park Cafe.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3108,
+          "keyword": "",
+          "description": "You see the park.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3106,
+      "name": "Park Cafe",
+      "description": "You are inside Park Cafe, a very well lighted, cosy place. The cafe\n\ris built from large logs. Through the windows in the northern wall you\n\rsee the river, and through the southern window you see many vigorous\n\rcolorful plants.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_WEST",
+          "to": 3105,
+          "keyword": "",
+          "description": "You see the park entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 21,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3107,
+      "name": "Small path through the park",
+      "description": "You are walking along a small path through the park.  The path continues\n\rsouth and east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3108,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3113,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3108,
+      "name": "Small path in the park",
+      "description": "You are standing on a small path inside the park.  The park entrance is\n\rjust north of here, and Park Cafe is just east of the entrance.  The path\n\rleads further east and west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3105,
+          "keyword": "",
+          "description": "You see the northern park entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3109,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3107,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3109,
+      "name": "Small path in the park",
+      "description": "You are on a small path running through the park.  It continues west and\n\rsouth and just north of here you see the southern wall of Park Cafe.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3115,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3108,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 21,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3110,
+      "name": "Cityguard Head Quarters",
+      "description": "You are inside a tidy office.  A big desk made from dark wood is standing\n\rin the centre of the room.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3111,
+          "keyword": "door",
+          "description": "You see Park Road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3142,
+          "keyword": "door",
+          "description": "You see a sign saying 'KEEP OUT'.\n\r",
+          "locks": null,
+          "key": 3120,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 27,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3111,
+      "name": "Park Road",
+      "description": "The road continues north and south.  A building is just west of here, you\n\rnotice a sign on the door.  The park entrance is to the east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "building door sign",
+        "description": "The sign on the door says:-\n\r\n\r                 Cityguard Head Quarters\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3131,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3112,
+          "keyword": "",
+          "description": "You see the park entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3118,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3110,
+          "keyword": "door",
+          "description": "You see the cityguard head quarters.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 24,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3112,
+      "name": "Western Park Entrance",
+      "description": "You are standing at the western end of the park.  A small path leads east\n\rinto the park and going west through the entrance you will reach Park Road.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3113,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3111,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 23,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3113,
+      "name": "A path in the park",
+      "description": "You are in the park.  The paths lead north and west.  Westwards is the\n\rpark entrance and to the east you see a small pond.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3107,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3114,
+          "keyword": "",
+          "description": "You see the pond.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3112,
+          "keyword": "",
+          "description": "You see the western park entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3114,
+      "name": "The Pond",
+      "description": "You are swimming around in the pond, feeling rather stupid.  You can get\n\rback on the path from the eastern and western end of the pond.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_SWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3115,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3113,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3115,
+      "name": "A path in the park",
+      "description": "You are in the park.  The paths lead north and east.  Eastwards is the\n\rpark entrance and to the west you see a small pond.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3109,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3116,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3114,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 21,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3116,
+      "name": "Eastern Park Entrance",
+      "description": "You are standing at the eastern end of the park.  A small path leads west\n\rinto the park.  Going east through the entrance you will reach Emerald\n\rAvenue.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3117,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3115,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 22,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3117,
+      "name": "Emerald Avenue",
+      "description": "You are at Emerald Avenue which continues north and south.  To the west is\n\rthe park entrance and to the east is the not very big Town Hall of Midgaard.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3132,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3137,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3119,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3116,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3118,
+      "name": "Park Road",
+      "description": "You are on Park Road which leads north and south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3111,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3135,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 24,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3119,
+      "name": "Emerald Avenue",
+      "description": "You are standing at a bend on Emerald Avenue.  The road leads north and west.\n\rTo the east, you see some run-down slums...it looks like the bad part of\n\rtown.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3117,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 2101,
+          "keyword": "",
+          "description": "You see some dangerous looking slums...just the right place for a gang.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3133,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3120,
+      "name": "Road Crossing",
+      "description": "You are in the middle of the road cross.  Roads lead in all directions.\n\rA huge black iron chain as thick as a tree trunk is fastened into the ground\n\rat the centre of the road cross.  Its other end leads directly upwards towards\n\rthe sky.\n\rA road sign is here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign points in all directions:\n\r\n\r   North - Emerald Avenue.\n\r   East  - Park Road.\n\r   South - Emerald Avenue.\n\r   West  - Park Road.\n\r\n\rSomeone has added the following with red paint:\n\r\n\r   Up    - Redferne's Flying Citadel.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3133,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3136,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3134,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3135,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 7914,
+          "keyword": "",
+          "description": "The chain disappears in the clouds.",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3121,
+      "name": "Emerald Avenue",
+      "description": "You are standing at a bend on Emerald Avenue.  The road leads south and\n\reast.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3134,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3125,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 26,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3122,
+      "name": "Park Road",
+      "description": "You are on Park Road which leads south and north.  Elm Street is east of\n\rhere.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3136,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3123,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3126,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3123,
+      "name": "Elm Street",
+      "description": "You are on Elm street.  Park Road is to the west and Elm Street continues\n\rin eastward direction.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3124,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3122,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3124,
+      "name": "Elm Street",
+      "description": "You near the end of Elm Street.  An old elm tree grows here.  A heavy\n\riron grating is south, surrounding the city's graveyard.  You can see a sign\n\rhanging on the grate.  The concourse joins Elm Street to the east, and the\n\rstreet ends to the north near a run-down neighborhood.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "grate grating",
+        "description": "Looks heavy.  A small sign is hanging on it.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3144,
+          "keyword": "",
+          "description": "You see the beginnings of Midgaard's bad neighborhoods.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3273,
+          "keyword": "",
+          "description": "You see the concourse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3600,
+          "keyword": "grate",
+          "description": "Through the solid iron bars you see the graveyard.\n\r",
+          "locks": null,
+          "key": 3121,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3123,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3125,
+      "name": "Emerald Avenue",
+      "description": "You are on Emerald Avenue which continues north.\n\rThe Concourse is south of here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3121,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3128,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 26,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3126,
+      "name": "Park Road",
+      "description": "You are on Park Road which continues north.  The Concourse is south of here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3122,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3129,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -9,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3127,
+      "name": "On the Concourse",
+      "description": "You are at the southwest corner of the city wall.  The Concourse leads\n\rboth north and east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3271,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3128,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 25,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3128,
+      "name": "On the Concourse",
+      "description": "You are walking around the scenic concourse as it continues its path around\n\rthe city of Midgaard.  The south gate of the city lies to your east, and the \n\rsouthwestern corner of the city wall is west.  Emerald Avenue stretches out\n\rto the north.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3125,
+          "keyword": "",
+          "description": "Emerald avenue lies to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3255,
+          "keyword": "",
+          "description": "You can see the heavily guarded southern gate of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3127,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 26,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3129,
+      "name": "On the Concourse",
+      "description": "The concourse continues its path around the city.  The southern gates of the\n\rcity are west of here, and park road lies north.  The northeastern corner of\n\rthe city wall is east.\n\r",
+      "flags": [
+        "ROOM_DARK",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3126,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3130,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3255,
+          "keyword": "",
+          "description": "You see the south gate of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -10,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3130,
+      "name": "On the Concourse",
+      "description": "You are at the southeast corner of the city wall.  The Concourse leads\n\rboth north and west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3273,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3129,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -10,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3131,
+      "name": "Park Road",
+      "description": "You are at Park Road which continues north and south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3101,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3111,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 24,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3132,
+      "name": "Emerald Avenue",
+      "description": "You are standing on the north end of Emerald Avenue.  To the north is \n\rAustral Square and Kate's Diner, to the east is the small street Penny Lane.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3103,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3139,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3117,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3133,
+      "name": "Emerald Avenue",
+      "description": "You are standing at a bend on Emerald Avenue.  To the east the road goes on\n\rand to the south is the Road Crossing.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3119,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3120,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3134,
+      "name": "Emerald Avenue",
+      "description": "You are standing at a bend on Emerald Avenue.  To the west the road goes on\n\rand to the north is the Road Crossing.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3120,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3121,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 27,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3135,
+      "name": "Park Road",
+      "description": "You are at a bend on Park Road.  To the north the road goes on and to the\n\reast is the Road Crossing.  To the south, the ancient cliffs rise from deep\n\runder the ground, forming a wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3118,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3120,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 24,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3136,
+      "name": "Park Road",
+      "description": "You are at a bend on Park Road.  To the south the road goes on and to the\n\rwest is the Road Crossing.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3122,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3120,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3137,
+      "name": "The Waiting Room",
+      "description": "You are standing in the waiting room at the town hall.  Wooden chairs stand\n\ralong the walls and a long desk is placed in the middle of the room.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3138,
+          "keyword": "",
+          "description": "It looks like some kind of office.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3117,
+          "keyword": "",
+          "description": "The exit west leads to Emerald Avenue.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 22,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3138,
+      "name": "The Mayor's Office",
+      "description": "You are in the not very big office of the Mayor of Midgaard.  A large and\n\rpolished but completely empty desk is standing in front of an armchair that\n\rlooks so comfortable that it most of all resembles a bed with the head end\n\rraised slightly.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "chair armchair",
+        "description": "This chair is really a masterpiece.  A chair where one can sit as comfortably\n\ras in a bed.  All lecture halls should be equipped with these things.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_WEST",
+          "to": 3137,
+          "keyword": "",
+          "description": "The waiting room is to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 25,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3139,
+      "name": "Penny Lane",
+      "description": "You are on Penny Lane.  Emerald Avenue is to the west and Penny Lane\n\rcontinues in eastward direction.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3140,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3132,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 22,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3140,
+      "name": "Penny Lane",
+      "description": "You are on Penny Lane.  The narrow road continues north and west, and\n\rthe concourse intersects this street to the east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3141,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3272,
+          "keyword": "",
+          "description": "You see the concourse.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3139,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 25,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3141,
+      "name": "The end of Penny Lane",
+      "description": "You are at the end of Penny Lane.  The only exit appears to be south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3140,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 25,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3142,
+      "name": "Captain's Office",
+      "description": "You are in the Office of the Captain of the Guard.  The Midgaard Coat of\n\rArms is hanging on the north wall and a heavy steel door is to the south.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "arms",
+        "description": "Although a bit dusty the Coat of Arms is an excellent piece of work.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3110,
+          "keyword": "door",
+          "description": "You see the Cityguard Head Quarters.\n\r",
+          "locks": null,
+          "key": 3120,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3143,
+          "keyword": "door",
+          "description": "You see the heavy steel door.\n\r",
+          "locks": null,
+          "key": 3137,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 28,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3143,
+      "name": "The Jail",
+      "description": "You are in a dark and humid jail.  The dark stone walls are hard and cold\n\rto the touch.  A heavy steel door is to the north.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "wall walls",
+        "description": "The walls are marked with lots of scratches.  Some of them spell sentences\n\rlike \"JAIL IS BETTER THAN SQL\" and \"BIGFOOTDAMOOSE IS ALIVE\".\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3142,
+          "keyword": "door",
+          "description": "You see the heavy steel door.\n\r",
+          "locks": null,
+          "key": 3137,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 28,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3144,
+      "name": "The end of Elm Street",
+      "description": "Elm street ends here, next to a dangerous-looking run down neighborhood.\n\rYou can enter the slums to the east, or head towards the graveyard to the\n\rsouth.  It occurs to you that this isn't the happiest section of town.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 2160,
+          "keyword": "",
+          "description": "You see a run-down slum neighborood.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3124,
+          "keyword": "",
+          "description": "Elm street continues towards a graveyard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3150,
+      "name": "Kate's Diner",
+      "description": "The smells of baking bread and simmering stew lead you dancing through\n\rthe doorway of the diner.  No greasy spoons to be seen here-- the\n\rbooth walls are covered in casual paisleys; the chairs are carved wood,\n\rrescued from garage sales.  Most tables have chess or backgammon boards\n\rcarved and painted on their fingertip-smooth tops.  The refrain of some\n\rmusical or other from the 1930's blends with the dusty golden light and the\n\rwonderful smells to put you completely at ease.  A huge picture window\n\rlooks out over the Midgaard River, and a doorway leads north onto the dock\n\rand the South Bank river landing, while the main entrance to the south\n\rreturns you to Austral Square.\n\rOn most days you will find Kate here, testing a batch of stew or brewing\n\ra special pot of cinnamon coffee, eerily just in time for your arrival\n\rPull up a chair, perhaps play a game, and take time out to talk.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_SAFE",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "window landing",
+        "description": "You can see a rickety bridge to your northwest, leading back into\n\rCentral Midgaard.  A rustic dock connects the Diner with the Midgaard\n\rRiver, and a boat or two floats lazily past.  Across the river you can see\n\rthe Levee and the Guild of Thieves, but they seem very far away from all\n\rof this...\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3203,
+          "keyword": "",
+          "description": "A small boat landing lets boats land at the diner.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3103,
+          "keyword": "",
+          "description": "You see Austral Square.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 1219,
+          "keyword": "",
+          "description": "You see the far-off halls of Valhalla.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3160,
+      "name": "Melancholy's Maps",
+      "description": "As you walk in, a sudden gust of wind enters the shop and sends several\n\rscraps of paper fly around the room.  You blink as the dust you've stirred \n\rup stings your eyes, and take a look around the shop.  This shop is cluttered \n\rwith old pieces of parchment, stacks of books, and odd scraps.  A desk with \n\rslightly less clutter than the rest of the shop is in front of you.  A scroll \n\rcase full of scrolls is behind the desk.  A bookcase is to the right of you, \n\rand to the left is a window overlooking the Common Square.  A small door, \n\rhalf hidden by a stack of books, leads to a room in the back of the shop.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "bookcase",
+        "description": "You see many cartographer journals and topographical studies.  You also see\n\rquite a few tomes written by someone named \"Anson MacDonald\".\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3161,
+          "keyword": "door",
+          "description": "A sign on the door says, \"Unauthorized Personel Prohibited\".\n\r",
+          "locks": null,
+          "key": 3161,
+          "exit_info": [
+            "EX_ISDOOR",
+            "EX_PICKPROOF"
+          ]
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3024,
+          "keyword": "",
+          "description": "To the south is the Poor Alley.  Across the alley, you see the Grubby Inn.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 13,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3161,
+      "name": "Melancholy's Room",
+      "description": "A faint smell of incense teases your nose as you enter this room.  You \n\rstep onto a soft bearskin rug and look around.  A simple bed lies against\n\rthe far wall.  At the foot of it is a sturdy, ironbound chest, most likely\n\rfull of Melancholy's trappings from her adventuring days.  On a small table\n\runder a window to the east is a vase with a single white rose.  Other than\n\rthat, the room is quite bare.  \n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_PRIVATE",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "chest",
+        "description": "This chest is firmly locked, and the device by which it opens is beyond your\n\rreckoning.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3160,
+          "keyword": "door",
+          "description": "A small door to the south leads out into the map shop.\n\r",
+          "locks": null,
+          "key": 3161,
+          "exit_info": [
+            "EX_ISDOOR",
+            "EX_PICKPROOF"
+          ]
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 1219,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 13,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3170,
+      "name": "Temple Of Stupid",
+      "description": "As you enter the abandoned warehouse your eyes blink violently to\n\radjust to the almost total darkness.  You wonder where the windows are\n\ras you step into a mud puddle in the middle of the floor.  As your eyes\n\radjust, you realize that there are mud puddles all around the room, and\n\rthis is some weird version of windows.  In a flash of revelation, you\n\rrealize that you've entered the Temple of Stupid.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "puddle puddles",
+        "description": "The puddles on the floor are filthy and exude a foul stench.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3044,
+          "keyword": "",
+          "description": "Poor Alley is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 1219,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 12,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3200,
+      "name": "Under the Bridge",
+      "description": "The arch under the bridge is covered by seaweed for one foot above the\n\rsurface of the river.  The water gently flows through an opening in the lower\n\rpart of the city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {
+        "keyword": "wall",
+        "description": "It is built from large grey rocks that have been fastened to each other with\n\rsome kind of mortar.  Looks pretty solid.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3201,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 9772,
+          "keyword": "",
+          "description": "You see the river flowing west into the Forest of Haon-Dor.",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 16,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3201,
+      "name": "On the River",
+      "description": "North of here you see the miserable buildings of the poor alley.  The\n\rriver flows west towards the bridge.  The riverbanks are too steep to climb.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3202,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3200,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 17,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3202,
+      "name": "On the River",
+      "description": "North of here you see the dump.  The river flows from east to west.  The\n\rriverbanks are too steep to climb.  A bridge passes overhead, connecting the\n\rdump to the promenade.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3203,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3201,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3203,
+      "name": "On the River",
+      "description": "The levee is directly north of here, and a small boat landing for Kate's\n\rDiner is to the south.  The river flows in an east west direction.\n\r",
+      "flags": [
+        "ROOM_NO_MOB",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3049,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3204,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3150,
+          "keyword": "",
+          "description": "You see the landing in the back of Kate's Diner. \n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3202,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 19,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3204,
+      "name": "On the River",
+      "description": "You see the warehouse on the northern riverbank.  East of here the river\n\rpasses under the eastern bridge and through the city wall. The banks of the \n\rlevee are west, in the direction of the current.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3205,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3203,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3205,
+      "name": "On the River",
+      "description": "The river enters from a hole in the eastern city wall.  The hole has been\n\rblocked by several vertically positioned iron bars set into the wall. Overhead\n\ryou can see the stone buttresses of the eastern bridge.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_WATER_NOSWIM",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 5001,
+          "keyword": "",
+          "description": "The iron bars are broken, allowing passage through the hole in the wall.\n\rBeyond the bars you see a dark tunnel.\n\rbars",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3204,
+          "keyword": "",
+          "description": "",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 21,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3250,
+      "name": "Wall Road",
+      "description": "Wall road extends north and south along the eastern walls of the city.\n\rThe east gate is north of you, south is an intersection with a dark alley. You\n\rcheck to make sure you still have your wallet.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3041,
+          "keyword": "",
+          "description": "The eastern gate of the city is north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3251,
+          "keyword": "",
+          "description": "You see an intersection with a dark alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3251,
+      "name": "Wall Road",
+      "description": "You are walking along the eastern wall of the city, on a road extending \n\rbetween the east gate and a bridge to the south.  A dark, dirty alley lies west \n\rof here.  You step carefully around a pool of liquid...who knows what it could \n\rbe in a place this foul...\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3250,
+          "keyword": "",
+          "description": "Wall road continues to the north, heading towards the gate.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3252,
+          "keyword": "",
+          "description": "Wall road continues to the south, towards a bridge over the Midgaard river.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3046,
+          "keyword": "",
+          "description": "A dirty, unlight alley lies to the west...it looks like a perfect spot for a\n\rmugging.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -4,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3252,
+      "name": "Wall Road",
+      "description": "The walls of Midgaard tower above you to the east, keeping the city safe\n\rfrom its enemies...you hope.  An intersection with a dark alley lies north,\n\rand a bridge over the Midgaard river is south.  Beyond the bridge wall road \n\rturns in the concourse.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3251,
+          "keyword": "",
+          "description": "You see an intersection with a dark alley.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3253,
+          "keyword": "",
+          "description": "The eastern bridge crosses the river to the south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3253,
+      "name": "On the Bridge",
+      "description": "You are crossing a strong stone bridge, which spans the Midgaard river.\n\rBelow you, the river flows into an opening in the city wall, sealed with\n\rstrong metal bars.  North of you is wall road, south of here the concourse\n\rloops around the inside of the city walls.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {
+        "keyword": "opening bars river",
+        "description": "Hmm...some of the bars have been ripped out of the wall.  Enough to pass a\n\rgood sized raft or canoe, or perhaps even a barge.  You wonder what sort of\n\rbeast had the strength to do this.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3252,
+          "keyword": "",
+          "description": "Wall road continues to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3104,
+          "keyword": "",
+          "description": "The concourse stretches around the southern parts of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3254,
+      "name": "The South Bridge",
+      "description": "You are standing on a small, rickety bridge leading from the Midgaard\n\rCity Dump to the much more attractive promenade of the southern parts of \n\rMidgaard.  You can smell the stench of the dump to the north, the fresher\n\rair of the promenade seems preferable.  Below you are the swift-moving \n\rcurrents of the Midgaard river.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3030,
+          "keyword": "",
+          "description": "You can see the clutter of the City Dump.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3102,
+          "keyword": "",
+          "description": "The beautiful promenade lies along the river.  What a romantic place to visit!\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 20,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3255,
+      "name": "Inside the South Gate of Midgaard",
+      "description": "Two strong stone towers surround a heavy wooden gate set into the city wall,\n\rto guard against the goblins that lurk in the southern forests.  You can exit\n\rthe city to the south, if you dare, or walk down the concourse to the east\n\ror west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3129,
+          "keyword": "",
+          "description": "The concourse heads east along the inside of the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3256,
+          "keyword": "",
+          "description": "You see the southern gate.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3128,
+          "keyword": "",
+          "description": "The concourse heads west along the inside of the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 27,
+        "y": -7,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3256,
+      "name": "Outside the South Gate of Midgaard",
+      "description": "You are standing outside the strong wooden gate on the southern walls of\n\rMidgaard.  Guards eye you suspiciously from the two towers on either side of\n\rthe gate, as they stand watch to protect the city from the goblins of this\n\rforest.  The trees and goblins of the Miden'nir are south, the gate back to \n\rMigaard lies north.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_FOREST",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3255,
+          "keyword": "",
+          "description": "You see the southern gate.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3505,
+          "keyword": "",
+          "description": "The green forests of the Miden'nir are south, hiding countless goblin warriors.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 27,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3257,
+      "name": "Wall Road",
+      "description": "You are walking along wall road, just north of the west gate of Midgaard.  \n\rThe road continues along the western wall to the north, towards an intersection\n\rwith a busy Clan street.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3258,
+          "keyword": "",
+          "description": "You see an intersection between wall road and a busy Clan street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3040,
+          "keyword": "",
+          "description": "The west gate of the city lies south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 9,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3258,
+      "name": "Wall Road",
+      "description": "Wall road intersects with a crowded Clan Road here, filled with shops and\n\rartisans.  The street stretches off to the east, towards the far wall of the\n\rcity.  Wall road continues to the north and south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3259,
+          "keyword": "",
+          "description": "Wall road continues to the north, towards the northwestern corner of the wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3301,
+          "keyword": "",
+          "description": "You see the shops and clan halls of Clan Road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3257,
+          "keyword": "",
+          "description": "Wall road continues alongside the western wall, heading towards the west gate.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3259,
+      "name": "Wall Road",
+      "description": "You are walking along wall road, which extends along the inside of the western\n\rwall of Midgaard.  To the south, you can see an intersection with a crowded\n\rClan street.  The northwestern corner of the city wall lies ahead to the\n\rnorth.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3260,
+          "keyword": "",
+          "description": "You see the northwestern corner of the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3258,
+          "keyword": "",
+          "description": "To the south, wall road intersects with a crowded Clan street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": 1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3260,
+      "name": "The Northwest Corner",
+      "description": "You are standing beneath the northwestern corner of the city wall, on a turn\n\rin wall road.  You can head south, towards the west gate, or east, to the \n\rnorth gate.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3261,
+          "keyword": "",
+          "description": "Wall road continues along the northern wall of the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3259,
+          "keyword": "",
+          "description": "Wall road continues along the western wall of the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 1,
+        "y": 2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3261,
+      "name": "Wall Road",
+      "description": "The city walls tower over you as walk down wall road, between the northwestern\n\rcorner of the wall to the west, and the northern gate of Midgaard to the east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3262,
+          "keyword": "",
+          "description": "Wall road continues to the east, towards the northern gate of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3260,
+          "keyword": "",
+          "description": "You can see the northwest corner of the city wall to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 2,
+        "y": 2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3262,
+      "name": "Inside the North Gate of Midgaard",
+      "description": "Two small towers surround a strong wooden gate, connected by a small stone\n\rbridge set with murder holes.  This gate is not as heavily guarded as the \n\rothers, as the plains outside are safe to travel.  You can leave midgaard to\n\rthe north, or continues along wall road to the west and east.  A teeming clan\n\rstreet is visible to the south, and beyond that the graceful spires of the\n\rTemple of Mota, but there is no way to reach them from here.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3268,
+          "keyword": "",
+          "description": "The northern plains are visible through the gate.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        },
+        {
+          "direction": "DIR_EAST",
+          "to": 3263,
+          "keyword": "",
+          "description": "Wall road continues to the east, alongside the northern wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3261,
+          "keyword": "",
+          "description": "Wall road continues to the west, alongside the northern wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": 2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3263,
+      "name": "Wall Road",
+      "description": "You are walking along wall road, between the northern gate of the city and the\n\rnortheastern corner of the city walls.  You can see bloodstains on the road...\n\rbetter be on guard for thieves.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3264,
+          "keyword": "",
+          "description": "You see the northeastern corner of the city walls.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3262,
+          "keyword": "",
+          "description": "The northern gate of the city lies east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 4,
+        "y": 2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3264,
+      "name": "The Northeast Corner",
+      "description": "Wall road turns the corner here, as you pass by the northeastern edge of the\n\rcity wall.  The north gate lies to your west, and the road south leads to the\n\reastern gate of Midgaard.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3265,
+          "keyword": "",
+          "description": "Wall road continues to the south, along the eastern wall of the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3263,
+          "keyword": "",
+          "description": "Wall road continues to the west, along the northern wall of the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 5,
+        "y": 2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3265,
+      "name": "Wall Road",
+      "description": "Just south of you is an intersection with a crowded clan street.  The \n\reastern wall of Midgaard is beside you, and to the north you can see the \n\rnortheast corner of the city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3264,
+          "keyword": "",
+          "description": "You can see the northeast corner of the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3266,
+          "keyword": "",
+          "description": "You see an intersection with a crowded street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 5,
+        "y": 1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3266,
+      "name": "Wall Road",
+      "description": "Here, wall road meets up with a busy clan street heading off towards the \n\rwest, and the far wall of the city.  You can smell spices, perfume, freshly\n\rcured hide, and other strange scents, all mingle together in one heady aroma.\n\rWall road continues to the north and south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3265,
+          "keyword": "",
+          "description": "Wall road continues to the north, along the eastern wall of the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3267,
+          "keyword": "",
+          "description": "Wall road continues to the south, towards the east gate of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3316,
+          "keyword": "",
+          "description": "You see a mass of people heading down Clan Road.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 5,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3267,
+      "name": "Wall Road",
+      "description": "You are near the center of wall road, just north of the east gate of the city.\n\rTo the north, you can see an intersection with a crowded clan street.\n\rThe guards at the gate eye you suspiciously from afar.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3266,
+          "keyword": "",
+          "description": "You see an intersection with a busy clan street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3041,
+          "keyword": "",
+          "description": "You see the well-guarded east gate of Midgaard.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 5,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3268,
+      "name": "Outside the North Gate of Midgaard",
+      "description": "You stand outside the north gate of the walled city of Midgaard.  A dusty \n\rtrail is visibile to the north, it stretches around the walls of the city.  \n\rFurther north are the wide expanses of the northern plains, leading to the \n\rvillage of Ofcol.  You can return to Midgaard to the south.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_FIELD",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3904,
+          "keyword": "",
+          "description": "You see a dusty trail leading around the city.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3262,
+          "keyword": "",
+          "description": "You see the north gate of Midgaard.\n\r",
+          "locks": null,
+          "key": 3133,
+          "exit_info": [
+            "EX_ISDOOR"
+          ]
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": 3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3270,
+      "name": "On the Concourse",
+      "description": "The strong stone walls of Midgaard rise up to the west, keeping evil at bay.\n\rThe concourse heads towards a bridge to the north, and continues south \n\ralongside a beautiful park.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3100,
+          "keyword": "",
+          "description": "The concourse continues to the north, along the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3271,
+          "keyword": "",
+          "description": "The concourse heads south, passing by a beautiful park.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 23,
+        "y": -5,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3271,
+      "name": "On the Concourse near the park",
+      "description": "You are walking down the Concoruse, along the western wall of Midgaard.  To\n\rthe north, the road passes by a beautiful park, to the south, you can see\n\rthe southwest corner of the city wall.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3270,
+          "keyword": "",
+          "description": "The concourse heads north, passing by a beautiful park.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3127,
+          "keyword": "",
+          "description": "You can see the southwest corner of the city wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 25,
+        "y": -6,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3272,
+      "name": "On the Concourse at Penny Lane",
+      "description": "You are on a road leading around the inner walls of Midgaard.  To the north,\n\rthe concourse heads towards a bridge into northern Midgaard.  To the south, \n\ryou can see an intersection with Elm Street.  The quaint paved streets of\n\rPenny Lane lie west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3104,
+          "keyword": "",
+          "description": "The concourse continues to the north, towards the east bridge.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3273,
+          "keyword": "",
+          "description": "The concourse continues south, towards an intersection with Elm Street.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3140,
+          "keyword": "",
+          "description": "You see Penny Lane.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -8,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3273,
+      "name": "On the Concourse at Elm Street",
+      "description": "The air grows chill as you pass near the Elm Street graveyard.  The walls of\n\rMidgaard are to the east, and the concourse continues to the north and south.\n\rTo your west, you see Elm Street at the graveyard entrance.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3272,
+          "keyword": "",
+          "description": "The concourse continues to the north, towards an intersection with Penny Lane.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3130,
+          "keyword": "",
+          "description": "The concourse continues to the south, towards the southeast corner of the wall.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3124,
+          "keyword": "",
+          "description": "You see Elm Street and the graveyard entrance.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 18,
+        "y": -9,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3301,
+      "name": "Clan Road",
+      "description": "You are standing on the western end of Clan Road.  The traffic here  \n\ris light.  This is a quieter section of Midgaard.  You can hear the sound of\n\rhaggling coming from the east.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3302,
+          "keyword": "",
+          "description": "Clan Road continues east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3258,
+          "keyword": "",
+          "description": "Wall Road is to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 2,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3302,
+      "name": "Clan Road",
+      "description": "You are walking along Clan Road.  To the south of you is the money changer.  \n\rClan Road continues on to the east and the west.  \n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3303,
+          "keyword": "",
+          "description": "Clan Road continues east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3334,
+          "keyword": "",
+          "description": "The money changer is to the south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3301,
+          "keyword": "",
+          "description": "Clan Road continues west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 3,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3303,
+      "name": "Clan Road",
+      "description": "The shops on this stretch of Clan road are long-closed and boarded up.\n\rNot much traffic passes through this part, as there is nothing to buy.  \n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3314,
+          "keyword": "",
+          "description": "Clan Road continues to the east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3302,
+          "keyword": "",
+          "description": "Clan Road continues to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 4,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3314,
+      "name": "Clan Road",
+      "description": "Noise and light abound on this part of Clan Road.  Clan road continues off\n\rto the east and west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3315,
+          "keyword": "",
+          "description": "Clan Road continues to the east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3303,
+          "keyword": "",
+          "description": "Clan Road continues to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 6,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3315,
+      "name": "Clan Road",
+      "description": "Clan Road seems to widen here slightly, allowing more traffic to \n\rtravel through the area.  To the south is another entrance to the busy\n\rpub.  This door is also open wide and spilling forth the sounds of\n\rhappy patrons.  Clan Road continues to the east and west.\n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3316,
+          "keyword": "",
+          "description": "Clan Road continues to the east.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3356,
+          "keyword": "",
+          "description": "A busy pub is to the south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3314,
+          "keyword": "",
+          "description": "Clan Road continues to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 7,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3316,
+      "name": "Clan Road",
+      "description": "You are at the eastern end of Clan Road.  To the east of you, the  \n\rtall wall around the city looms up before you and casts its shadow on\n\ryou.  Clan Road continues to the west.  \n\r",
+      "flags": [
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_CITY",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3266,
+          "keyword": "",
+          "description": "Wall Road is east of here.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3315,
+          "keyword": "",
+          "description": "Clan Road continues to the west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 8,
+        "y": 0,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3334,
+      "name": "A Money Changer's Room",
+      "description": "A few strategically placed lanterns keep this place well-lit in the \n\rabsence of any windows.  The room is surprisingly well appointed with  \n\rtapestries hanging on the walls.  You'd wager your life the moneylender's\n\rguards are behind them, as there are none here.  The moneylender himself\n\rworks from behind a large desk, no doubt holding a fortune in gold and silver.\n\rA smallish sign hangs on the wall, lettered in common.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "Give me your coins, and I shall change them for you, taking but 1 in 20 for\n\rmy fee.  --- Otho the Changer\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3302,
+          "keyword": "",
+          "description": "Clan Road is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 8,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3352,
+      "name": "Grebe's Tavern",
+      "description": "Dive.  That's all you can say about this place; its a\n\rdive.  You step carefully over the dead and/or drunk sailors\n\ron the floor toward the center of the room.  There's no\n\rdecorations on the wall; they've all been ripped down in anger\n\ror for use as weapons at one time or another.  Looking around,\n\ryou search vainly for a clean table to sit at, and then give up.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "table tables",
+        "description": "You find a table that's relatively vomit-free.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3026,
+          "keyword": "",
+          "description": "A dark alley is to the south.\n\r",
+          "locks": null,
+          "key": 0,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 15,
+        "y": -3,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3355,
+      "name": "Andy's Pub",
+      "description": "The busy pub is filled with patrons.  People are laughing and singing.\n\rA minstrel plays his lute in another part of the pub, and a few people\n\rare even dancing.  Andy, the pubs owner, wanders around and checks to see\n\rthat the needs of his customers are met.  The bar is to your south.  East\n\rof you is another section of the pub.  You know that there are rooms to\n\rbe had somewhere around here...\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_EAST",
+          "to": 3356,
+          "keyword": "",
+          "description": "You see another room in the pub.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3357,
+          "keyword": "",
+          "description": "The bar is to the south of you.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 6,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3356,
+      "name": "A Room in the Pub",
+      "description": "This part of the pub is filled with dancing and singing.  A wandering\n\rminstrel is on a chair in a corner with his lute.  A busty red headed\n\rwoman is standing near him and singing a tale of comedic heroism. Drunk\n\rmen sit laughing at their tables and busy bar maids weave through the\n\rcrowd with full mugs and horns of ale and mead.  Another part of the pub\n\ris located to your west. The bar is to the south.  A set of steps occupy\n\rin a corner of the room.  They lead up to the inn section of this\n\rprosperous establishment.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3315,
+          "keyword": "",
+          "description": "Clan Road is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_SOUTH",
+          "to": 3358,
+          "keyword": "",
+          "description": "The bar is to your south.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_WEST",
+          "to": 3355,
+          "keyword": "",
+          "description": "Another room in the pub is to your west.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        },
+        {
+          "direction": "DIR_UP",
+          "to": 3359,
+          "keyword": "",
+          "description": "A set of stairs leads up to the reception area.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 7,
+        "y": -1,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3357,
+      "name": "The Bar",
+      "description": "A long mahogany bar is set in the back of the pub.  Mugs line a shelf\n\rbehind the bar.  Bottles of strong, nasty looking liquids decorate one\n\rof the lower shelves.  A large cask rests on a table behind the bar.  A\n\rstrong but friendly-looking bartender stands next to the cask polishing\n\rglasses.  A couple of the bar maids stand in a corner and throw the most\n\rinviting glances your way.\n\rA sign is on the wall.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign says: Don't forget our dinner menu.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3355,
+          "keyword": "",
+          "description": "The pub proper is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 6,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3358,
+      "name": "The Bar",
+      "description": "A long mahogany bar is set in the back of the pub.  Mugs line a shelf\n\rbehind the bar.  Bottles of strong, nasty looking liquids decorate one\n\rof the lower shelves.  A large cask rests on a table behind the bar.  A\n\rstrong but friendly looking bartender stands next to the cask polishing\n\rglasses.  A couple of the bar maids stand in a corner and throw the most\n\rinviting glances your way.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {
+        "keyword": "sign",
+        "description": "The sign says: Don't forget our dinner menu.\n\r"
+      },
+      "exits": [
+        {
+          "direction": "DIR_NORTH",
+          "to": 3356,
+          "keyword": "",
+          "description": "The pub proper is to the north.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 7,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "vnum": 3359,
+      "name": "The Inn",
+      "description": "You are standing upstairs from Andy's Pub at Andy's Inn.  A few chairs\n\rand a couple of end tables give the room a `homey' atmosphere.  A large\n\rstone fireplace burns brightly against one wall and warms the room.  A\n\rlarge oak desk is nestled in one corner of the room.  A small man with\n\rwire-framed glasses sits behind the desk working dilligently on his books.\n\rHe looks up as you enter the room.  He looks at you quizzically.  He is\n\rprobably waiting for you to ask him for a room.\n\r",
+      "flags": [
+        "ROOM_INDOORS",
+        "ROOM_LAW"
+      ],
+      "sector_type": "SECT_INSIDE",
+      "extra_descr_data": {},
+      "exits": [
+        {
+          "direction": "DIR_DOWN",
+          "to": 3356,
+          "keyword": "",
+          "description": "The stairs lead back down to the pub.\n\r",
+          "locks": null,
+          "key": -1,
+          "exit_info": null
+        }
+      ],
+      "coords": {
+        "x": 7,
+        "y": -1,
+        "z": 1
+      }
+    }
+  ],
+  "file": "./area\\midgaard.are"
+}
