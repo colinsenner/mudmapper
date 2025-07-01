@@ -1,4 +1,5 @@
 import json
+import pickle
 from dataclasses import dataclass, field
 from typing import List, Optional
 
@@ -7,7 +8,6 @@ from rom.coords import Coords
 from .FileIO import (fread_letter, fread_number, fread_string, fread_until,
                      fread_word)
 from .merc import get_direction_name, get_flag_names, get_sector_type, dir_to_direction
-
 
 @dataclass
 class Exit():
@@ -127,6 +127,9 @@ class Area():
                     fread_until(fs, "#0")
                     print(f"Skipping section {word}...")
 
+        with open("area.pickle", "wb") as f:  # "wb" for write binary
+            pickle.dump(area, f)       # Pickle the data
+
         return area
 
     @staticmethod
@@ -150,38 +153,9 @@ class Area():
 
         print("Coordinates assigned")
 
-        # Initialize coordinates and occupied sets
-        coordinates = assign_coordinates(area.rooms)
-        occupied = set(coordinates.values())
-
-        def relax_coordinates(coordinates, occupied, graph, iterations=10):
-            """Relax the coordinates to smooth room positions."""
-            for _ in range(iterations):
-                new_coordinates = {}
-                for vnum, (x, y, z) in coordinates.items():
-                    neighbors = [coordinates[neighbor_vnum] for neighbor_vnum in graph.get(vnum, {}) if neighbor_vnum in coordinates]
-                    if neighbors:
-                        avg_x = sum(nx for nx, ny, nz in neighbors) / len(neighbors)
-                        avg_y = sum(ny for nx, ny, nz in neighbors) / len(neighbors)
-                        avg_z = sum(nz for nx, ny, nz in neighbors) / len(neighbors)
-                        new_coordinates[vnum] = (
-                            (x + avg_x) / 2,  # Move halfway towards the average
-                            (y + avg_y) / 2,
-                            (z + avg_z) / 2,
-                        )
-                    else:
-                        new_coordinates[vnum] = (x, y, z)  # No neighbors, keep position
-
-                # Update coordinates and occupied sets
-                coordinates.update(new_coordinates)
-                occupied.clear()
-                occupied.update(new_coordinates.values())
-
         # Create a graph structure for room connections
         graph = {room.vnum: {e.to: e.direction for e in room.exits} for room in area.rooms}
 
-        # Relax the coordinates to smooth positions
-        relax_coordinates(coordinates, occupied, graph)
 
     @staticmethod
     def load_rooms(fs):
