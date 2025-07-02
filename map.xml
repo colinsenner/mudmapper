@@ -11,22 +11,22 @@
       <exit direction="up" target="3700"/>
     </room>
     <room id="3002" area="1" title="Cleric's Inner Sanctum" environment="1">
-      <coord x="-2" y="0" z="0"/>
+      <coord x="-5" y="0" z="0"/>
       <exit direction="east" target="3003"/>
       <exit direction="down" target="7026"/>
     </room>
     <room id="3003" area="1" title="Cleric's Bar" environment="1">
-      <coord x="-1" y="0" z="0"/>
+      <coord x="-3" y="0" z="0"/>
       <exit direction="south" target="3004"/>
       <exit direction="west" target="3002"/>
     </room>
     <room id="3004" area="1" title="Entrance to Cleric's Guild" environment="1">
-      <coord x="-1" y="-1" z="0"/>
+      <coord x="-3" y="-2" z="0"/>
       <exit direction="north" target="3003"/>
       <exit direction="east" target="3005"/>
     </room>
     <room id="3005" area="1" title="The Temple Square" environment="1">
-      <coord x="0" y="-1" z="0"/>
+      <coord x="0" y="-2" z="0"/>
       <exit direction="north" target="3001"/>
       <exit direction="east" target="3006"/>
       <exit direction="south" target="3014"/>
@@ -34,25 +34,25 @@
       <exit direction="up" target="3057"/>
     </room>
     <room id="3006" area="1" title="Entrance to the Grunting Boar Inn" environment="1">
-      <coord x="1" y="-1" z="0"/>
+      <coord x="2" y="-2" z="0"/>
       <exit direction="east" target="3007"/>
       <exit direction="west" target="3005"/>
       <exit direction="up" target="3008"/>
     </room>
     <room id="3007" area="1" title="The Grunting Boar" environment="1">
-      <coord x="2" y="-1" z="0"/>
+      <coord x="4" y="-2" z="0"/>
       <exit direction="west" target="3006"/>
     </room>
     <room id="3008" area="1" title="The Defunct Reception" environment="1">
-      <coord x="1" y="-1" z="1"/>
+      <coord x="2" y="-2" z="2"/>
       <exit direction="down" target="3006"/>
     </room>
     <room id="3009" area="1" title="The Bakery" environment="1">
-      <coord x="11" y="-1" z="0"/>
+      <coord x="3" y="-1" z="0"/>
       <exit direction="south" target="3013"/>
     </room>
     <room id="3010" area="1" title="The General Store" environment="1">
-      <coord x="3" y="-1" z="0"/>
+      <coord x="2" y="-1" z="0"/>
       <exit direction="south" target="3015"/>
     </room>
     <room id="3011" area="1" title="The Weapon Shop" environment="1">
@@ -60,346 +60,346 @@
       <exit direction="south" target="3016"/>
     </room>
     <room id="3012" area="1" title="Main Street" environment="1">
-      <coord x="10" y="-2" z="0"/>
+      <coord x="1" y="-4" z="0"/>
       <exit direction="north" target="3033"/>
       <exit direction="east" target="3013"/>
       <exit direction="south" target="3017"/>
       <exit direction="west" target="3040"/>
     </room>
     <room id="3013" area="1" title="Main Street" environment="1">
-      <coord x="11" y="-2" z="0"/>
+      <coord x="3" y="-4" z="0"/>
       <exit direction="north" target="3009"/>
       <exit direction="east" target="3014"/>
       <exit direction="south" target="3020"/>
       <exit direction="west" target="3012"/>
     </room>
     <room id="3014" area="1" title="Market Square" environment="1">
-      <coord x="0" y="-2" z="0"/>
+      <coord x="0" y="-4" z="0"/>
       <exit direction="north" target="3005"/>
       <exit direction="east" target="3015"/>
       <exit direction="south" target="3025"/>
       <exit direction="west" target="3013"/>
     </room>
     <room id="3015" area="1" title="The Main Street" environment="1">
-      <coord x="1" y="-2" z="0"/>
+      <coord x="2" y="-4" z="0"/>
       <exit direction="north" target="3010"/>
       <exit direction="east" target="3016"/>
       <exit direction="south" target="3034"/>
       <exit direction="west" target="3014"/>
     </room>
     <room id="3016" area="1" title="The Main Street" environment="1">
-      <coord x="2" y="-2" z="0"/>
+      <coord x="4" y="-4" z="0"/>
       <exit direction="north" target="3011"/>
       <exit direction="east" target="3041"/>
       <exit direction="south" target="3021"/>
       <exit direction="west" target="3015"/>
     </room>
     <room id="3017" area="1" title="Entrance to Mage's Guild" environment="1">
-      <coord x="10" y="-3" z="0"/>
+      <coord x="1" y="-6" z="0"/>
       <exit direction="north" target="3012"/>
       <exit direction="south" target="3018"/>
     </room>
     <room id="3018" area="1" title="Mage's Bar" environment="1">
-      <coord x="10" y="-4" z="0"/>
+      <coord x="1" y="-8" z="0"/>
       <exit direction="north" target="3017"/>
       <exit direction="east" target="3019"/>
     </room>
     <room id="3019" area="1" title="Mage's Laboratory" environment="1">
-      <coord x="11" y="-4" z="0"/>
+      <coord x="3" y="-8" z="0"/>
       <exit direction="west" target="3018"/>
       <exit direction="down" target="7017"/>
     </room>
     <room id="3020" area="1" title="The Armoury" environment="1">
-      <coord x="11" y="-3" z="0"/>
+      <coord x="3" y="-6" z="0"/>
       <exit direction="north" target="3013"/>
     </room>
     <room id="3021" area="1" title="Entrance Hall to the Guild of Swordsmen" environment="1">
-      <coord x="2" y="-3" z="0"/>
+      <coord x="4" y="-6" z="0"/>
       <exit direction="north" target="3016"/>
       <exit direction="east" target="3022"/>
     </room>
     <room id="3022" area="1" title="The Bar of Swordsmen" environment="1">
-      <coord x="3" y="-3" z="0"/>
+      <coord x="7" y="-6" z="0"/>
       <exit direction="south" target="3023"/>
       <exit direction="west" target="3021"/>
     </room>
     <room id="3023" area="1" title="The Tournament and Practice Yard" environment="1">
-      <coord x="3" y="-4" z="0"/>
+      <coord x="7" y="-8" z="0"/>
       <exit direction="north" target="3022"/>
       <exit direction="down" target="7048"/>
     </room>
     <room id="3024" area="1" title="Eastern End of Poor Alley" environment="1">
-      <coord x="13" y="-4" z="0"/>
+      <coord x="2" y="-8" z="0"/>
       <exit direction="north" target="3160"/>
       <exit direction="east" target="3025"/>
       <exit direction="south" target="3048"/>
       <exit direction="west" target="3044"/>
     </room>
     <room id="3025" area="1" title="The Common Square" environment="1">
-      <coord x="14" y="-4" z="0"/>
+      <coord x="4" y="-8" z="0"/>
       <exit direction="north" target="3014"/>
       <exit direction="east" target="3026"/>
       <exit direction="south" target="3030"/>
       <exit direction="west" target="3024"/>
     </room>
     <room id="3026" area="1" title="The Dark Alley" environment="1">
-      <coord x="15" y="-4" z="0"/>
+      <coord x="6" y="-8" z="0"/>
       <exit direction="north" target="3352"/>
       <exit direction="east" target="3045"/>
       <exit direction="south" target="3027"/>
       <exit direction="west" target="3025"/>
     </room>
     <room id="3027" area="1" title="Entrance Hall to the Guild of Thieves" environment="1">
-      <coord x="15" y="-5" z="0"/>
+      <coord x="6" y="-10" z="0"/>
       <exit direction="north" target="3026"/>
       <exit direction="east" target="3028"/>
     </room>
     <room id="3028" area="1" title="The Thieves Bar" environment="1">
-      <coord x="16" y="-5" z="0"/>
+      <coord x="8" y="-10" z="0"/>
       <exit direction="south" target="3029"/>
       <exit direction="west" target="3027"/>
     </room>
     <room id="3029" area="1" title="The Secret Yard" environment="1">
-      <coord x="29" y="-6" z="0"/>
+      <coord x="8" y="-13" z="0"/>
       <exit direction="north" target="3028"/>
       <exit direction="down" target="7043"/>
     </room>
     <room id="3030" area="1" title="The Dump" environment="1">
-      <coord x="22" y="-1" z="0"/>
+      <coord x="8" y="0" z="0"/>
       <exit direction="north" target="3025"/>
       <exit direction="south" target="3254"/>
       <exit direction="down" target="7030"/>
     </room>
     <room id="3031" area="1" title="The Pet Shop" environment="1">
-      <coord x="16" y="-3" z="0"/>
+      <coord x="8" y="-6" z="0"/>
       <exit direction="south" target="3045"/>
     </room>
     <room id="3033" area="1" title="The Magic Shop" environment="1">
-      <coord x="10" y="-1" z="0"/>
+      <coord x="1" y="-2" z="0"/>
       <exit direction="south" target="3012"/>
     </room>
     <room id="3034" area="1" title="The Jeweller's Shop" environment="1">
-      <coord x="1" y="-3" z="0"/>
+      <coord x="2" y="-7" z="0"/>
       <exit direction="north" target="3015"/>
     </room>
     <room id="3035" area="1" title="The Leather Shop" environment="1">
-      <coord x="12" y="-3" z="0"/>
+      <coord x="0" y="-6" z="0"/>
       <exit direction="south" target="3044"/>
     </room>
     <room id="3040" area="1" title="Inside the West Gate of Midgaard" environment="1">
-      <coord x="9" y="-2" z="0"/>
+      <coord x="-2" y="-4" z="0"/>
       <exit direction="north" target="3257"/>
       <exit direction="east" target="3012"/>
       <exit direction="south" target="3042"/>
       <exit direction="west" target="3052"/>
     </room>
     <room id="3041" area="1" title="Inside the East Gate of Midgaard" environment="1">
-      <coord x="3" y="-2" z="0"/>
+      <coord x="6" y="-4" z="0"/>
       <exit direction="north" target="3267"/>
       <exit direction="east" target="3053"/>
       <exit direction="south" target="3250"/>
       <exit direction="west" target="3016"/>
     </room>
     <room id="3042" area="1" title="Wall Road" environment="1">
-      <coord x="9" y="-3" z="0"/>
+      <coord x="-2" y="-6" z="0"/>
       <exit direction="north" target="3040"/>
       <exit direction="south" target="3043"/>
     </room>
     <room id="3043" area="1" title="Wall Road" environment="1">
-      <coord x="9" y="-4" z="0"/>
+      <coord x="-2" y="-8" z="0"/>
       <exit direction="north" target="3042"/>
       <exit direction="east" target="3044"/>
       <exit direction="south" target="3047"/>
     </room>
     <room id="3044" area="1" title="Poor Alley" environment="1">
-      <coord x="12" y="-4" z="0"/>
+      <coord x="0" y="-8" z="0"/>
       <exit direction="north" target="3035"/>
       <exit direction="east" target="3024"/>
       <exit direction="south" target="3170"/>
       <exit direction="west" target="3043"/>
     </room>
     <room id="3045" area="1" title="Alley at Levee" environment="1">
-      <coord x="16" y="-4" z="0"/>
+      <coord x="8" y="-8" z="0"/>
       <exit direction="north" target="3031"/>
       <exit direction="east" target="3046"/>
       <exit direction="south" target="3049"/>
       <exit direction="west" target="3026"/>
     </room>
     <room id="3046" area="1" title="Eastern end of Alley" environment="1">
-      <coord x="17" y="-4" z="0"/>
+      <coord x="10" y="-8" z="0"/>
       <exit direction="north" target="3056"/>
       <exit direction="east" target="3251"/>
       <exit direction="south" target="3050"/>
       <exit direction="west" target="3045"/>
     </room>
     <room id="3047" area="1" title="Wall Road" environment="1">
-      <coord x="23" y="-2" z="0"/>
+      <coord x="0" y="-3" z="0"/>
       <exit direction="north" target="3043"/>
       <exit direction="east" target="9400"/>
       <exit direction="south" target="3051"/>
     </room>
     <room id="3048" area="1" title="Grubby Inn" environment="1">
-      <coord x="13" y="-5" z="0"/>
+      <coord x="2" y="-11" z="0"/>
       <exit direction="north" target="3024"/>
     </room>
     <room id="3049" area="1" title="Levee" environment="1">
-      <coord x="19" y="0" z="0"/>
+      <coord x="10" y="1" z="0"/>
       <exit direction="north" target="3045"/>
       <exit direction="south" target="3203"/>
     </room>
     <room id="3050" area="1" title="Abandoned Warehouse" environment="1">
-      <coord x="28" y="-5" z="0"/>
+      <coord x="10" y="-11" z="0"/>
       <exit direction="north" target="3046"/>
       <exit direction="up" target="8604"/>
     </room>
     <room id="3051" area="1" title="On the Bridge" environment="1">
-      <coord x="23" y="-3" z="0"/>
+      <coord x="0" y="-5" z="0"/>
       <exit direction="north" target="3047"/>
       <exit direction="south" target="3100"/>
     </room>
     <room id="3052" area="1" title="Outside the West Gate of Midgaard" environment="1">
-      <coord x="8" y="-2" z="0"/>
+      <coord x="-4" y="-4" z="0"/>
       <exit direction="north" target="3900"/>
       <exit direction="east" target="3040"/>
       <exit direction="west" target="6000"/>
     </room>
     <room id="3053" area="1" title="Outside the East Gate of Midgaard" environment="1">
-      <coord x="4" y="-2" z="0"/>
+      <coord x="8" y="-4" z="0"/>
       <exit direction="north" target="3908"/>
       <exit direction="east" target="3503"/>
       <exit direction="west" target="3041"/>
     </room>
     <room id="3054" area="1" title="By the Temple Altar" environment="1">
-      <coord x="0" y="1" z="0"/>
+      <coord x="0" y="2" z="0"/>
       <exit direction="south" target="3001"/>
       <exit direction="up" target="1215"/>
     </room>
     <room id="3056" area="1" title="The Fountain of Youth Apothecary" environment="1">
-      <coord x="17" y="-3" z="0"/>
+      <coord x="10" y="-6" z="0"/>
       <exit direction="south" target="3046"/>
     </room>
     <room id="3057" area="1" title="In the air..." environment="1">
-      <coord x="0" y="-1" z="1"/>
+      <coord x="0" y="-2" z="2"/>
       <exit direction="up" target="1017"/>
       <exit direction="down" target="3005"/>
     </room>
     <room id="3100" area="1" title="Northwest end of Concourse" environment="1">
-      <coord x="23" y="-4" z="0"/>
+      <coord x="0" y="-7" z="0"/>
       <exit direction="north" target="3051"/>
       <exit direction="east" target="3101"/>
       <exit direction="south" target="3270"/>
     </room>
     <room id="3101" area="1" title="Promenade" environment="1">
-      <coord x="24" y="-4" z="0"/>
+      <coord x="2" y="-7" z="0"/>
       <exit direction="east" target="3102"/>
       <exit direction="south" target="3131"/>
       <exit direction="west" target="3100"/>
     </room>
     <room id="3102" area="1" title="Promenade" environment="1">
-      <coord x="20" y="-3" z="0"/>
+      <coord x="8" y="-5" z="0"/>
       <exit direction="north" target="3254"/>
       <exit direction="east" target="3103"/>
       <exit direction="south" target="3105"/>
       <exit direction="west" target="3101"/>
     </room>
     <room id="3103" area="1" title="Austral Square" environment="1">
-      <coord x="19" y="-3" z="0"/>
+      <coord x="10" y="-5" z="0"/>
       <exit direction="north" target="3150"/>
       <exit direction="east" target="3104"/>
       <exit direction="south" target="3132"/>
       <exit direction="west" target="3102"/>
     </room>
     <room id="3104" area="1" title="Northeast end of Concourse" environment="1">
-      <coord x="18" y="-7" z="0"/>
+      <coord x="12" y="-14" z="0"/>
       <exit direction="north" target="3253"/>
       <exit direction="south" target="3272"/>
       <exit direction="west" target="3103"/>
     </room>
     <room id="3105" area="1" title="Park Entrance" environment="1">
-      <coord x="20" y="-4" z="0"/>
+      <coord x="8" y="-7" z="0"/>
       <exit direction="north" target="3102"/>
       <exit direction="east" target="3106"/>
       <exit direction="south" target="3108"/>
     </room>
     <room id="3106" area="1" title="Park Cafe" environment="1">
-      <coord x="21" y="-4" z="0"/>
+      <coord x="11" y="-7" z="0"/>
       <exit direction="west" target="3105"/>
     </room>
     <room id="3107" area="1" title="Small path through the park" environment="1">
-      <coord x="19" y="-5" z="0"/>
+      <coord x="6" y="-9" z="0"/>
       <exit direction="east" target="3108"/>
       <exit direction="south" target="3113"/>
     </room>
     <room id="3108" area="1" title="Small path in the park" environment="1">
-      <coord x="20" y="-5" z="0"/>
+      <coord x="8" y="-9" z="0"/>
       <exit direction="north" target="3105"/>
       <exit direction="east" target="3109"/>
       <exit direction="west" target="3107"/>
     </room>
     <room id="3109" area="1" title="Small path in the park" environment="1">
-      <coord x="21" y="-5" z="0"/>
+      <coord x="10" y="-9" z="0"/>
       <exit direction="south" target="3115"/>
       <exit direction="west" target="3108"/>
     </room>
     <room id="3110" area="1" title="Cityguard Head Quarters" environment="1">
-      <coord x="27" y="-6" z="0"/>
+      <coord x="-1" y="-11" z="0"/>
       <exit direction="east" target="3111"/>
       <exit direction="west" target="3142"/>
     </room>
     <room id="3111" area="1" title="Park Road" environment="1">
-      <coord x="24" y="-6" z="0"/>
+      <coord x="2" y="-11" z="0"/>
       <exit direction="north" target="3131"/>
       <exit direction="east" target="3112"/>
       <exit direction="south" target="3118"/>
       <exit direction="west" target="3110"/>
     </room>
     <room id="3112" area="1" title="Western Park Entrance" environment="1">
-      <coord x="23" y="-6" z="0"/>
+      <coord x="4" y="-11" z="0"/>
       <exit direction="east" target="3113"/>
       <exit direction="west" target="3111"/>
     </room>
     <room id="3113" area="1" title="A path in the park" environment="1">
-      <coord x="19" y="-6" z="0"/>
+      <coord x="6" y="-11" z="0"/>
       <exit direction="north" target="3107"/>
       <exit direction="east" target="3114"/>
       <exit direction="west" target="3112"/>
     </room>
     <room id="3114" area="1" title="The Pond" environment="1">
-      <coord x="20" y="-6" z="0"/>
+      <coord x="8" y="-11" z="0"/>
       <exit direction="east" target="3115"/>
       <exit direction="west" target="3113"/>
     </room>
     <room id="3115" area="1" title="A path in the park" environment="1">
-      <coord x="21" y="-6" z="0"/>
+      <coord x="10" y="-11" z="0"/>
       <exit direction="north" target="3109"/>
       <exit direction="east" target="3116"/>
       <exit direction="west" target="3114"/>
     </room>
     <room id="3116" area="1" title="Eastern Park Entrance" environment="1">
-      <coord x="22" y="-6" z="0"/>
+      <coord x="12" y="-11" z="0"/>
       <exit direction="east" target="3117"/>
       <exit direction="west" target="3115"/>
     </room>
     <room id="3117" area="1" title="Emerald Avenue" environment="1">
-      <coord x="17" y="-5" z="0"/>
+      <coord x="10" y="-10" z="0"/>
       <exit direction="north" target="3132"/>
       <exit direction="east" target="3137"/>
       <exit direction="south" target="3119"/>
       <exit direction="west" target="3116"/>
     </room>
     <room id="3118" area="1" title="Park Road" environment="1">
-      <coord x="24" y="-7" z="0"/>
+      <coord x="2" y="-14" z="0"/>
       <exit direction="north" target="3111"/>
       <exit direction="south" target="3135"/>
     </room>
     <room id="3119" area="1" title="Emerald Avenue" environment="1">
-      <coord x="17" y="-6" z="0"/>
+      <coord x="10" y="-12" z="0"/>
       <exit direction="north" target="3117"/>
       <exit direction="east" target="2101"/>
       <exit direction="west" target="3133"/>
     </room>
     <room id="3120" area="1" title="Road Crossing" environment="1">
-      <coord x="16" y="-7" z="0"/>
+      <coord x="8" y="-14" z="0"/>
       <exit direction="north" target="3133"/>
       <exit direction="east" target="3136"/>
       <exit direction="south" target="3134"/>
@@ -407,306 +407,306 @@
       <exit direction="up" target="7914"/>
     </room>
     <room id="3121" area="1" title="Emerald Avenue" environment="1">
-      <coord x="26" y="-5" z="0"/>
+      <coord x="2" y="-6" z="0"/>
       <exit direction="east" target="3134"/>
       <exit direction="south" target="3125"/>
     </room>
     <room id="3122" area="1" title="Park Road" environment="1">
-      <coord x="17" y="-8" z="0"/>
+      <coord x="10" y="-16" z="0"/>
       <exit direction="north" target="3136"/>
       <exit direction="east" target="3123"/>
       <exit direction="south" target="3126"/>
     </room>
     <room id="3123" area="1" title="Elm Street" environment="1">
-      <coord x="19" y="-8" z="0"/>
+      <coord x="13" y="-16" z="0"/>
       <exit direction="east" target="3124"/>
       <exit direction="west" target="3122"/>
     </room>
     <room id="3124" area="1" title="Elm Street" environment="1">
-      <coord x="20" y="-8" z="0"/>
+      <coord x="15" y="-16" z="0"/>
       <exit direction="north" target="3144"/>
       <exit direction="east" target="3273"/>
       <exit direction="south" target="3600"/>
       <exit direction="west" target="3123"/>
     </room>
     <room id="3125" area="1" title="Emerald Avenue" environment="1">
-      <coord x="26" y="-6" z="0"/>
+      <coord x="2" y="-10" z="0"/>
       <exit direction="north" target="3121"/>
       <exit direction="south" target="3128"/>
     </room>
     <room id="3126" area="1" title="Park Road" environment="1">
-      <coord x="17" y="-9" z="0"/>
+      <coord x="10" y="-18" z="0"/>
       <exit direction="north" target="3122"/>
       <exit direction="south" target="3129"/>
     </room>
     <room id="3127" area="1" title="On the Concourse" environment="1">
-      <coord x="25" y="-7" z="0"/>
+      <coord x="0" y="-13" z="0"/>
       <exit direction="north" target="3271"/>
       <exit direction="east" target="3128"/>
     </room>
     <room id="3128" area="1" title="On the Concourse" environment="1">
-      <coord x="26" y="-7" z="0"/>
+      <coord x="2" y="-13" z="0"/>
       <exit direction="north" target="3125"/>
       <exit direction="east" target="3255"/>
       <exit direction="west" target="3127"/>
     </room>
     <room id="3129" area="1" title="On the Concourse" environment="1">
-      <coord x="17" y="-10" z="0"/>
+      <coord x="10" y="-20" z="0"/>
       <exit direction="north" target="3126"/>
       <exit direction="east" target="3130"/>
       <exit direction="west" target="3255"/>
     </room>
     <room id="3130" area="1" title="On the Concourse" environment="1">
-      <coord x="18" y="-10" z="0"/>
+      <coord x="12" y="-20" z="0"/>
       <exit direction="north" target="3273"/>
       <exit direction="west" target="3129"/>
     </room>
     <room id="3131" area="1" title="Park Road" environment="1">
-      <coord x="24" y="-5" z="0"/>
+      <coord x="2" y="-9" z="0"/>
       <exit direction="north" target="3101"/>
       <exit direction="south" target="3111"/>
     </room>
     <room id="3132" area="1" title="Emerald Avenue" environment="1">
-      <coord x="19" y="-4" z="0"/>
+      <coord x="10" y="-7" z="0"/>
       <exit direction="north" target="3103"/>
       <exit direction="east" target="3139"/>
       <exit direction="south" target="3117"/>
     </room>
     <room id="3133" area="1" title="Emerald Avenue" environment="1">
-      <coord x="16" y="-6" z="0"/>
+      <coord x="8" y="-12" z="0"/>
       <exit direction="east" target="3119"/>
       <exit direction="south" target="3120"/>
     </room>
     <room id="3134" area="1" title="Emerald Avenue" environment="1">
-      <coord x="27" y="-5" z="0"/>
+      <coord x="4" y="-6" z="0"/>
       <exit direction="north" target="3120"/>
       <exit direction="west" target="3121"/>
     </room>
     <room id="3135" area="1" title="Park Road" environment="1">
-      <coord x="24" y="-8" z="0"/>
+      <coord x="2" y="-16" z="0"/>
       <exit direction="north" target="3118"/>
       <exit direction="east" target="3120"/>
     </room>
     <room id="3136" area="1" title="Park Road" environment="1">
-      <coord x="17" y="-7" z="0"/>
+      <coord x="10" y="-14" z="0"/>
       <exit direction="south" target="3122"/>
       <exit direction="west" target="3120"/>
     </room>
     <room id="3137" area="1" title="The Waiting Room" environment="1">
-      <coord x="22" y="-5" z="0"/>
+      <coord x="13" y="-10" z="0"/>
       <exit direction="east" target="3138"/>
       <exit direction="west" target="3117"/>
     </room>
     <room id="3138" area="1" title="The Mayor's Office" environment="1">
-      <coord x="25" y="-5" z="0"/>
+      <coord x="15" y="-10" z="0"/>
       <exit direction="west" target="3137"/>
     </room>
     <room id="3139" area="1" title="Penny Lane" environment="1">
-      <coord x="22" y="-4" z="0"/>
+      <coord x="12" y="-7" z="0"/>
       <exit direction="east" target="3140"/>
       <exit direction="west" target="3132"/>
     </room>
     <room id="3140" area="1" title="Penny Lane" environment="1">
-      <coord x="25" y="-4" z="0"/>
+      <coord x="14" y="-7" z="0"/>
       <exit direction="north" target="3141"/>
       <exit direction="east" target="3272"/>
       <exit direction="west" target="3139"/>
     </room>
     <room id="3141" area="1" title="The end of Penny Lane" environment="1">
-      <coord x="25" y="-3" z="0"/>
+      <coord x="14" y="-5" z="0"/>
       <exit direction="south" target="3140"/>
     </room>
     <room id="3142" area="1" title="Captain's Office" environment="1">
-      <coord x="28" y="-6" z="0"/>
+      <coord x="-3" y="-11" z="0"/>
       <exit direction="east" target="3110"/>
       <exit direction="south" target="3143"/>
     </room>
     <room id="3143" area="1" title="The Jail" environment="1">
-      <coord x="28" y="-7" z="0"/>
+      <coord x="-3" y="-13" z="0"/>
       <exit direction="north" target="3142"/>
     </room>
     <room id="3144" area="1" title="The end of Elm Street" environment="1">
-      <coord x="20" y="-7" z="0"/>
+      <coord x="15" y="-14" z="0"/>
       <exit direction="east" target="2160"/>
       <exit direction="south" target="3124"/>
     </room>
     <room id="3150" area="1" title="Kate's Diner" environment="1">
-      <coord x="19" y="-2" z="0"/>
+      <coord x="10" y="-3" z="0"/>
       <exit direction="north" target="3203"/>
       <exit direction="south" target="3103"/>
       <exit direction="up" target="1219"/>
     </room>
     <room id="3160" area="1" title="Melancholy's Maps" environment="1">
-      <coord x="13" y="-3" z="0"/>
+      <coord x="2" y="-6" z="0"/>
       <exit direction="north" target="3161"/>
       <exit direction="south" target="3024"/>
     </room>
     <room id="3161" area="1" title="Melancholy's Room" environment="1">
-      <coord x="13" y="-2" z="0"/>
+      <coord x="2" y="-3" z="0"/>
       <exit direction="south" target="3160"/>
       <exit direction="up" target="1219"/>
     </room>
     <room id="3170" area="1" title="Temple Of Stupid" environment="1">
-      <coord x="12" y="-5" z="0"/>
+      <coord x="0" y="-10" z="0"/>
       <exit direction="north" target="3044"/>
       <exit direction="up" target="1219"/>
     </room>
     <room id="3200" area="1" title="Under the Bridge" environment="1">
-      <coord x="16" y="-1" z="0"/>
+      <coord x="2" y="-1" z="0"/>
       <exit direction="east" target="3201"/>
       <exit direction="west" target="9772"/>
     </room>
     <room id="3201" area="1" title="On the River" environment="1">
-      <coord x="17" y="-1" z="0"/>
+      <coord x="6" y="-1" z="0"/>
       <exit direction="east" target="3202"/>
       <exit direction="west" target="3200"/>
     </room>
     <room id="3202" area="1" title="On the River" environment="1">
-      <coord x="18" y="-1" z="0"/>
+      <coord x="8" y="-1" z="0"/>
       <exit direction="east" target="3203"/>
       <exit direction="west" target="3201"/>
     </room>
     <room id="3203" area="1" title="On the River" environment="1">
-      <coord x="19" y="-1" z="0"/>
+      <coord x="10" y="-1" z="0"/>
       <exit direction="north" target="3049"/>
       <exit direction="east" target="3204"/>
       <exit direction="south" target="3150"/>
       <exit direction="west" target="3202"/>
     </room>
     <room id="3204" area="1" title="On the River" environment="1">
-      <coord x="20" y="-1" z="0"/>
+      <coord x="12" y="-1" z="0"/>
       <exit direction="east" target="3205"/>
       <exit direction="west" target="3203"/>
     </room>
     <room id="3205" area="1" title="On the River" environment="1">
-      <coord x="21" y="-1" z="0"/>
+      <coord x="14" y="-1" z="0"/>
       <exit direction="east" target="5001"/>
       <exit direction="west" target="3204"/>
     </room>
     <room id="3250" area="1" title="Wall Road" environment="1">
-      <coord x="18" y="-3" z="0"/>
+      <coord x="12" y="-6" z="0"/>
       <exit direction="north" target="3041"/>
       <exit direction="south" target="3251"/>
     </room>
     <room id="3251" area="1" title="Wall Road" environment="1">
-      <coord x="18" y="-4" z="0"/>
+      <coord x="12" y="-8" z="0"/>
       <exit direction="north" target="3250"/>
       <exit direction="south" target="3252"/>
       <exit direction="west" target="3046"/>
     </room>
     <room id="3252" area="1" title="Wall Road" environment="1">
-      <coord x="18" y="-5" z="0"/>
+      <coord x="12" y="-10" z="0"/>
       <exit direction="north" target="3251"/>
       <exit direction="south" target="3253"/>
     </room>
     <room id="3253" area="1" title="On the Bridge" environment="1">
-      <coord x="18" y="-6" z="0"/>
+      <coord x="12" y="-12" z="0"/>
       <exit direction="north" target="3252"/>
       <exit direction="south" target="3104"/>
     </room>
     <room id="3254" area="1" title="The South Bridge" environment="1">
-      <coord x="20" y="-2" z="0"/>
+      <coord x="8" y="-3" z="0"/>
       <exit direction="north" target="3030"/>
       <exit direction="south" target="3102"/>
     </room>
     <room id="3255" area="1" title="Inside the South Gate of Midgaard" environment="1">
-      <coord x="27" y="-7" z="0"/>
+      <coord x="4" y="-13" z="0"/>
       <exit direction="east" target="3129"/>
       <exit direction="south" target="3256"/>
       <exit direction="west" target="3128"/>
     </room>
     <room id="3256" area="1" title="Outside the South Gate of Midgaard" environment="1">
-      <coord x="27" y="-8" z="0"/>
+      <coord x="4" y="-15" z="0"/>
       <exit direction="north" target="3255"/>
       <exit direction="south" target="3505"/>
     </room>
     <room id="3257" area="1" title="Wall Road" environment="1">
-      <coord x="9" y="-1" z="0"/>
+      <coord x="-2" y="-2" z="0"/>
       <exit direction="north" target="3258"/>
       <exit direction="south" target="3040"/>
     </room>
     <room id="3258" area="1" title="Wall Road" environment="1">
-      <coord x="1" y="0" z="0"/>
+      <coord x="-2" y="0" z="0"/>
       <exit direction="north" target="3259"/>
       <exit direction="east" target="3301"/>
       <exit direction="south" target="3257"/>
     </room>
     <room id="3259" area="1" title="Wall Road" environment="1">
-      <coord x="1" y="1" z="0"/>
+      <coord x="-2" y="2" z="0"/>
       <exit direction="north" target="3260"/>
       <exit direction="south" target="3258"/>
     </room>
     <room id="3260" area="1" title="The Northwest Corner" environment="1">
-      <coord x="1" y="2" z="0"/>
+      <coord x="-2" y="4" z="0"/>
       <exit direction="east" target="3261"/>
       <exit direction="south" target="3259"/>
     </room>
     <room id="3261" area="1" title="Wall Road" environment="1">
-      <coord x="2" y="2" z="0"/>
+      <coord x="0" y="4" z="0"/>
       <exit direction="east" target="3262"/>
       <exit direction="west" target="3260"/>
     </room>
     <room id="3262" area="1" title="Inside the North Gate of Midgaard" environment="1">
-      <coord x="3" y="2" z="0"/>
+      <coord x="2" y="4" z="0"/>
       <exit direction="north" target="3268"/>
       <exit direction="east" target="3263"/>
       <exit direction="west" target="3261"/>
     </room>
     <room id="3263" area="1" title="Wall Road" environment="1">
-      <coord x="4" y="2" z="0"/>
+      <coord x="4" y="4" z="0"/>
       <exit direction="east" target="3264"/>
       <exit direction="west" target="3262"/>
     </room>
     <room id="3264" area="1" title="The Northeast Corner" environment="1">
-      <coord x="5" y="2" z="0"/>
+      <coord x="6" y="4" z="0"/>
       <exit direction="south" target="3265"/>
       <exit direction="west" target="3263"/>
     </room>
     <room id="3265" area="1" title="Wall Road" environment="1">
-      <coord x="5" y="1" z="0"/>
+      <coord x="6" y="2" z="0"/>
       <exit direction="north" target="3264"/>
       <exit direction="south" target="3266"/>
     </room>
     <room id="3266" area="1" title="Wall Road" environment="1">
-      <coord x="5" y="0" z="0"/>
+      <coord x="6" y="0" z="0"/>
       <exit direction="north" target="3265"/>
       <exit direction="south" target="3267"/>
       <exit direction="west" target="3316"/>
     </room>
     <room id="3267" area="1" title="Wall Road" environment="1">
-      <coord x="5" y="-1" z="0"/>
+      <coord x="6" y="-2" z="0"/>
       <exit direction="north" target="3266"/>
       <exit direction="south" target="3041"/>
     </room>
     <room id="3268" area="1" title="Outside the North Gate of Midgaard" environment="1">
-      <coord x="3" y="3" z="0"/>
+      <coord x="2" y="6" z="0"/>
       <exit direction="north" target="3904"/>
       <exit direction="south" target="3262"/>
     </room>
     <room id="3270" area="1" title="On the Concourse" environment="1">
-      <coord x="23" y="-5" z="0"/>
+      <coord x="0" y="-9" z="0"/>
       <exit direction="north" target="3100"/>
       <exit direction="south" target="3271"/>
     </room>
     <room id="3271" area="1" title="On the Concourse near the park" environment="1">
-      <coord x="25" y="-6" z="0"/>
+      <coord x="0" y="-11" z="0"/>
       <exit direction="north" target="3270"/>
       <exit direction="south" target="3127"/>
     </room>
     <room id="3272" area="1" title="On the Concourse at Penny Lane" environment="1">
-      <coord x="18" y="-8" z="0"/>
+      <coord x="12" y="-16" z="0"/>
       <exit direction="north" target="3104"/>
       <exit direction="south" target="3273"/>
       <exit direction="west" target="3140"/>
     </room>
     <room id="3273" area="1" title="On the Concourse at Elm Street" environment="1">
-      <coord x="18" y="-9" z="0"/>
+      <coord x="12" y="-18" z="0"/>
       <exit direction="north" target="3272"/>
       <exit direction="south" target="3130"/>
       <exit direction="west" target="3124"/>
     </room>
     <room id="3301" area="1" title="Clan Road" environment="1">
-      <coord x="2" y="0" z="0"/>
+      <coord x="1" y="0" z="0"/>
       <exit direction="east" target="3302"/>
       <exit direction="west" target="3258"/>
     </room>
@@ -717,56 +717,56 @@
       <exit direction="west" target="3301"/>
     </room>
     <room id="3303" area="1" title="Clan Road" environment="1">
-      <coord x="4" y="0" z="0"/>
+      <coord x="5" y="0" z="0"/>
       <exit direction="east" target="3314"/>
       <exit direction="west" target="3302"/>
     </room>
     <room id="3314" area="1" title="Clan Road" environment="1">
-      <coord x="6" y="0" z="0"/>
+      <coord x="7" y="0" z="0"/>
       <exit direction="east" target="3315"/>
       <exit direction="west" target="3303"/>
     </room>
     <room id="3315" area="1" title="Clan Road" environment="1">
-      <coord x="7" y="0" z="0"/>
+      <coord x="9" y="0" z="0"/>
       <exit direction="east" target="3316"/>
       <exit direction="south" target="3356"/>
       <exit direction="west" target="3314"/>
     </room>
     <room id="3316" area="1" title="Clan Road" environment="1">
-      <coord x="8" y="0" z="0"/>
+      <coord x="11" y="0" z="0"/>
       <exit direction="east" target="3266"/>
       <exit direction="west" target="3315"/>
     </room>
     <room id="3334" area="1" title="A Money Changer's Room" environment="1">
-      <coord x="8" y="-1" z="0"/>
+      <coord x="3" y="-2" z="0"/>
       <exit direction="north" target="3302"/>
     </room>
     <room id="3352" area="1" title="Grebe's Tavern" environment="1">
-      <coord x="15" y="-3" z="0"/>
+      <coord x="6" y="-6" z="0"/>
       <exit direction="south" target="3026"/>
     </room>
     <room id="3355" area="1" title="Andy's Pub" environment="1">
-      <coord x="6" y="-1" z="0"/>
+      <coord x="7" y="-2" z="0"/>
       <exit direction="east" target="3356"/>
       <exit direction="south" target="3357"/>
     </room>
     <room id="3356" area="1" title="A Room in the Pub" environment="1">
-      <coord x="7" y="-1" z="0"/>
+      <coord x="9" y="-2" z="0"/>
       <exit direction="north" target="3315"/>
       <exit direction="south" target="3358"/>
       <exit direction="west" target="3355"/>
       <exit direction="up" target="3359"/>
     </room>
     <room id="3357" area="1" title="The Bar" environment="1">
-      <coord x="6" y="-2" z="0"/>
+      <coord x="7" y="-4" z="0"/>
       <exit direction="north" target="3355"/>
     </room>
     <room id="3358" area="1" title="The Bar" environment="1">
-      <coord x="7" y="-2" z="0"/>
+      <coord x="9" y="-4" z="0"/>
       <exit direction="north" target="3356"/>
     </room>
     <room id="3359" area="1" title="The Inn" environment="1">
-      <coord x="7" y="-1" z="1"/>
+      <coord x="9" y="-2" z="2"/>
       <exit direction="down" target="3356"/>
     </room>
   </rooms>

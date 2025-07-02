@@ -32,6 +32,10 @@ class Room():
     coords: Optional[Coords] = None
 
 
+def mul(t: tuple, scalar: int):
+    return tuple(x * scalar for x in t)
+
+
 def assign_coordinates(rooms):
     # Direction offsets for coordinate changes, including Z-axis
     DIRECTION_OFFSETS = {
@@ -50,17 +54,30 @@ def assign_coordinates(rooms):
     def dfs(room, x, y, z):
         if room.vnum in visited:
             return
+
+        print(f"Parsing room: {room.vnum}")
         visited.add(room.vnum)
         coordinates[room.vnum] = (x, y, z)
         occupied.add((x, y, z))
 
         for exit in room.exits:
             neighbor_vnum = exit.to
+
             if neighbor_vnum not in visited:
-                dx, dy, dz = DIRECTION_OFFSETS[exit.direction]
+                scalar = 2048
+                direction = DIRECTION_OFFSETS[exit.direction]
+                dx, dy, dz = mul(direction, scalar) 
+                
                 new_x, new_y, new_z = x + dx, y + dy, z + dz
+
                 while (new_x, new_y, new_z) in occupied:  # Adjust to avoid overlap
-                    new_x += 1  # Shift to the right if overlap occurs
+                    scalar /= 2
+
+                    if scalar < 1:
+                        print(f"Error, can't subdivide the distance any more.")
+                        exit(1)
+
+                    new_x, new_y, new_z = (new_x + direction[0] * scalar, new_y + direction[1] * scalar, new_z + direction[2] * scalar)
 
                 tmp = list(r for r in rooms if r.vnum == neighbor_vnum) 
                 if len(tmp) > 0:
@@ -70,7 +87,26 @@ def assign_coordinates(rooms):
     if rooms:
         dfs(rooms[0], 0, 0, 0)
 
-    return coordinates
+    return normalize(coordinates)
+
+
+def normalize(coordinates: dict):
+    # Normalize the room positions to be within more normal values
+    non_zero_values = []
+    for x,y,z in coordinates.values():
+        if x > 0:
+            non_zero_values.append(x) 
+        if y > 0:
+            non_zero_values.append(y) 
+        if z > 0:
+            non_zero_values.append(z) 
+        
+
+
+    # Find the minimum among these non-zero values
+    smallest_non_zero = min(non_zero_values)
+    
+    return {vnum:(int(coord[0] / smallest_non_zero), int(coord[1] / smallest_non_zero), int(coord[2] / smallest_non_zero)) for vnum, coord in coordinates.items()}
 
 
 class Area():
@@ -139,10 +175,15 @@ class Area():
 
         # Breadth-first search through the map to visit all rooms and return their coordinates
         map_coords = assign_coordinates(area.rooms)
+        visited: dict[tuple, int] = {}
+
+        for vnum, coords in map_coords.items():
+            if coords not in visited:
+                visited[coords] = vnum
+            else:
+                print(f"[WARNING] Overlapping room detected! {vnum} overlaps {visited[coords]}")
 
         for room in area.rooms:
-            # Assign each room its coordinates
-
             # Some rooms, like pet store shops have no exits and must follow the pet store room
             if room.vnum not in map_coords:
                 print(f"[WARNING] Room {room.vnum} was not found in our search, it may be a pet store with no exits.  Room name: '{room.name}'.")
@@ -152,9 +193,6 @@ class Area():
             room.coords = Coords(*coords)  # Assign x, y, z as Coords object
 
         print("Coordinates assigned")
-
-        # Create a graph structure for room connections
-        graph = {room.vnum: {e.to: e.direction for e in room.exits} for room in area.rooms}
 
 
     @staticmethod
