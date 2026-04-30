@@ -100,8 +100,27 @@ def _direction_from(a, b):
     return None
 
 
+def _on_ray(start_pos, direction, candidate):
+    '''True iff *candidate* lies strictly along *direction* from *start_pos*.'''
+    sx, sy, sz = start_pos
+    cx, cy, cz = candidate
+    if direction == 'east':
+        return cy == sy and cz == sz and cx > sx
+    if direction == 'west':
+        return cy == sy and cz == sz and cx < sx
+    if direction == 'north':
+        return cx == sx and cz == sz and cy > sy
+    if direction == 'south':
+        return cx == sx and cz == sz and cy < sy
+    if direction == 'up':
+        return cx == sx and cy == sy and cz > sz
+    if direction == 'down':
+        return cx == sx and cy == sy and cz < sz
+    return False
+
+
 def _find_placement(current, direction, occupied, line_cells, graph,
-                    nb_vnum, map_coords):
+                    nb_vnum, map_coords, pending_rays):
     '''
     Find a position for nb_vnum being placed *direction* from *current*.
 
@@ -114,6 +133,9 @@ def _find_placement(current, direction, occupied, line_cells, graph,
       4. Doesn't trap unplaced neighbours of nb_vnum: the immediate cell in
          each of nb_vnum's other exit directions must not already be
          occupied or on a connection line.
+      5. Doesn't sit on another placed room's outgoing-edge ray (where that
+         room's actual target is some *other* unplaced room) — landing there
+         would force that room's eventual line to cross us.
     '''
     dx, dy, dz = _DIR_DELTAS[direction]
     cx, cy, cz = current
@@ -129,6 +151,18 @@ def _find_placement(current, direction, occupied, line_cells, graph,
 
         path = _cells_between(current, candidate)
         if any(c in occupied for c in path):
+            continue
+
+        # Check: candidate must not lie on another placed room's pending-ray
+        # (unless we are the actual target of that ray).
+        blocked_by_ray = False
+        for ray_start, ray_dir, ray_target in pending_rays:
+            if ray_target == nb_vnum:
+                continue
+            if _on_ray(ray_start, ray_dir, candidate):
+                blocked_by_ray = True
+                break
+        if blocked_by_ray:
             continue
 
         ok = True
@@ -181,6 +215,11 @@ def bfs(visited, graph, map_coords, node):
     coord_map = {node: start}        # vnum -> (x, y, z)
     occupied = {start: node}         # (x, y, z) -> vnum
     line_cells = set()               # cells covered by connection segments
+    pending_rays = []                # list of (start_pos, direction, target_vnum)
+
+    # Seed pending rays for the start node's outgoing edges.
+    for tgt, dir_raw in graph.get(node, {}).items():
+        pending_rays.append((start, dir_to_direction(dir_raw), tgt))
 
     while bfs_queue:
         vnum = bfs_queue.popleft()
@@ -201,22 +240,30 @@ def bfs(visited, graph, map_coords, node):
             bfs_queue.append(neighbour)
 
             pos = _find_placement(current, direction, occupied, line_cells,
-                                  graph, neighbour, coord_map)
+                                  graph, neighbour, coord_map, pending_rays)
 
             coord_map[neighbour] = pos
             occupied[pos] = neighbour
 
+            # Newly-placed: drop any pending rays that targeted this room.
+            pending_rays[:] = [r for r in pending_rays if r[2] != neighbour]
+
             # Record line cells for the new connection (parent <-> neighbour)
-            # and for any back-edges to already-placed rooms.
+            # and for any back-edges to already-placed rooms. For edges to
+            # rooms not yet placed, register a new pending ray.
             for cell in _cells_between(current, pos):
                 line_cells.add(cell)
             for other_vnum, other_dir_raw in graph.get(neighbour, {}).items():
-                if other_vnum == vnum or other_vnum not in coord_map:
+                if other_vnum == vnum:
                     continue
-                other_pos = coord_map[other_vnum]
-                if _direction_from(pos, other_pos) == dir_to_direction(other_dir_raw):
-                    for cell in _cells_between(pos, other_pos):
-                        line_cells.add(cell)
+                other_dir = dir_to_direction(other_dir_raw)
+                if other_vnum in coord_map:
+                    other_pos = coord_map[other_vnum]
+                    if _direction_from(pos, other_pos) == other_dir:
+                        for cell in _cells_between(pos, other_pos):
+                            line_cells.add(cell)
+                else:
+                    pending_rays.append((pos, other_dir, other_vnum))
 
     for vnum, (x, y, z) in coord_map.items():
         map_coords[vnum] = Coords(x, y, z)
