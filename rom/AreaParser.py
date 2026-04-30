@@ -1,3 +1,4 @@
+import collections
 import json
 
 from rom.coords import Coords
@@ -44,38 +45,181 @@ class Room():
         return printable
 
 
-# Used for BFS
+# Used for BFS (kept for backwards compatibility; no longer required by the
+# updated bfs implementation below).
 visited = []
 queue = []
 
 
+# (dx, dy, dz) deltas for each cardinal direction.
+_DIR_DELTAS = {
+    'north': ( 0,  1,  0),
+    'south': ( 0, -1,  0),
+    'east':  ( 1,  0,  0),
+    'west':  (-1,  0,  0),
+    'up':    ( 0,  0,  1),
+    'down':  ( 0,  0, -1),
+}
+
+# Maximum number of steps to walk along a direction before giving up and
+# falling back to the naive position. Areas in the wild can be large but are
+# rarely deeper than this along a single axis.
+_MAX_PLACEMENT_STEPS = 500
+
+
+def _cells_between(a, b):
+    '''Cells strictly between two coords on the same axis (exclusive of endpoints).'''
+    ax, ay, az = a
+    bx, by, bz = b
+    cells = []
+    if ax == bx and ay == by and az != bz:
+        step = 1 if bz > az else -1
+        for z in range(az + step, bz, step):
+            cells.append((ax, ay, z))
+    elif ax == bx and az == bz and ay != by:
+        step = 1 if by > ay else -1
+        for y in range(ay + step, by, step):
+            cells.append((ax, y, az))
+    elif ay == by and az == bz and ax != bx:
+        step = 1 if bx > ax else -1
+        for x in range(ax + step, bx, step):
+            cells.append((x, ay, az))
+    return cells
+
+
+def _direction_from(a, b):
+    '''Cardinal direction from a to b if they share two axes, otherwise None.'''
+    ax, ay, az = a
+    bx, by, bz = b
+    if ax == bx and ay == by and az != bz:
+        return 'up' if bz > az else 'down'
+    if ax == bx and az == bz and ay != by:
+        return 'north' if by > ay else 'south'
+    if ay == by and az == bz and ax != bx:
+        return 'east' if bx > ax else 'west'
+    return None
+
+
+def _find_placement(current, direction, occupied, line_cells, graph,
+                    nb_vnum, map_coords):
+    '''
+    Find a position for nb_vnum being placed *direction* from *current*.
+
+    Walks step-by-step in *direction* until it finds a candidate that:
+      1. Is unoccupied and not on an existing connection line.
+      2. Has a clear path (no rooms) from *current* to the candidate.
+      3. Doesn't break already-placed neighbours of nb_vnum: each placed
+         neighbour must lie in the correct cardinal direction from the
+         candidate, with a clear path.
+      4. Doesn't trap unplaced neighbours of nb_vnum: the immediate cell in
+         each of nb_vnum's other exit directions must not already be
+         occupied or on a connection line.
+    '''
+    dx, dy, dz = _DIR_DELTAS[direction]
+    cx, cy, cz = current
+    nb_exits = graph.get(nb_vnum, {})
+
+    for step in range(1, _MAX_PLACEMENT_STEPS + 1):
+        candidate = (cx + dx * step, cy + dy * step, cz + dz * step)
+
+        if candidate in occupied:
+            continue
+        if candidate in line_cells:
+            continue
+
+        path = _cells_between(current, candidate)
+        if any(c in occupied for c in path):
+            continue
+
+        ok = True
+        for other_vnum, other_dir_raw in nb_exits.items():
+            other_dir = dir_to_direction(other_dir_raw)
+            if other_vnum in map_coords:
+                other_pos = map_coords[other_vnum]
+                if _direction_from(candidate, other_pos) != other_dir:
+                    ok = False
+                    break
+                if any(c in occupied for c in _cells_between(candidate, other_pos)):
+                    ok = False
+                    break
+            else:
+                odx, ody, odz = _DIR_DELTAS[other_dir]
+                immediate = (candidate[0] + odx, candidate[1] + ody, candidate[2] + odz)
+                if immediate in occupied or immediate in line_cells:
+                    ok = False
+                    break
+
+        if ok:
+            return candidate
+
+    # Fallback — walk along the direction until we find any unoccupied cell.
+    # This guarantees no overlap, at the cost of relaxing path/lookahead checks.
+    step = 1
+    while True:
+        candidate = (cx + dx * step, cy + dy * step, cz + dz * step)
+        if candidate not in occupied:
+            return candidate
+        step += 1
+
+
 def bfs(visited, graph, map_coords, node):
-    '''Literally haven't ever had to use this skill unless it was a technical interview...'''
+    '''
+    Coordinate-assigning BFS that avoids two failure modes:
+      1. Rooms overlapping at the same cell (ISSUE-1).
+      2. Connection lines passing through other rooms (ISSUE-2).
+
+    The *visited* and *map_coords* arguments are mutated in place for
+    backwards compatibility with the original signature. Internally the
+    function tracks its own visited set so successive calls with a stale
+    module-level list don't poison the search.
+    '''
+    seen = {node}
     visited.append(node)
-    queue.append(node)
+    bfs_queue = collections.deque([node])
 
-    map_coords[node] = Coords(0, 0, 0)
+    start = (0, 0, 0)
+    coord_map = {node: start}        # vnum -> (x, y, z)
+    occupied = {start: node}         # (x, y, z) -> vnum
+    line_cells = set()               # cells covered by connection segments
 
-    while queue:
-        vnum = queue.pop(0)
+    while bfs_queue:
+        vnum = bfs_queue.popleft()
 
         if vnum not in graph:
             print(f"[WARNING] Found vnum {vnum} which isn't in our graph, it's probably a connecting door to another area.")
             continue
 
-        current_room_location = map_coords[vnum]
+        current = coord_map[vnum]
 
-        for k, v in graph[vnum].items():
-            neighbour = k
-            direction = dir_to_direction(v)
+        for neighbour, direction_raw in graph[vnum].items():
+            if neighbour in seen:
+                continue
 
-            if neighbour not in visited:
-                visited.append(neighbour)
-                queue.append(neighbour)
+            direction = dir_to_direction(direction_raw)
+            seen.add(neighbour)
+            visited.append(neighbour)
+            bfs_queue.append(neighbour)
 
-                position = Coords.from_direction(current_room_location, direction)
-                # print(f"{neighbour:>7} is {direction:>8} from {vnum:>7} at {position}")
-                map_coords[neighbour] = position
+            pos = _find_placement(current, direction, occupied, line_cells,
+                                  graph, neighbour, coord_map)
+
+            coord_map[neighbour] = pos
+            occupied[pos] = neighbour
+
+            # Record line cells for the new connection (parent <-> neighbour)
+            # and for any back-edges to already-placed rooms.
+            for cell in _cells_between(current, pos):
+                line_cells.add(cell)
+            for other_vnum, other_dir_raw in graph.get(neighbour, {}).items():
+                if other_vnum == vnum or other_vnum not in coord_map:
+                    continue
+                other_pos = coord_map[other_vnum]
+                if _direction_from(pos, other_pos) == dir_to_direction(other_dir_raw):
+                    for cell in _cells_between(pos, other_pos):
+                        line_cells.add(cell)
+
+    for vnum, (x, y, z) in coord_map.items():
+        map_coords[vnum] = Coords(x, y, z)
 
     return map_coords
 
